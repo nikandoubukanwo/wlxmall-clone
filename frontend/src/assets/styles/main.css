@@ -1,0 +1,303 @@
+/* ========================================
+   Global Styles - 万联芯城 Clone
+   ======================================== */
+
+/* Utility: Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Utility: Clearfix */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Utility: Section with background alternation */
+.section-white {
+  background-color: var(--color-white);
+}
+.section-gray {
+  background-color: var(--color-gray-9);
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  color: var(--color-dark);
+  padding: 40px 0 10px;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+.section-subtitle {
+  text-align: center;
+  color: var(--color-gray-2);
+  font-size: var(--font-base);
+  margin-bottom: 30px;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  font-size: var(--font-base);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  gap: 6px;
+  line-height: 1.4;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  border-color: var(--color-danger);
+}
+
+.btn-default {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border-color: var(--color-gray-6);
+}
+.btn-default:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-sm {
+  padding: 4px 12px;
+  font-size: var(--font-xs);
+}
+
+.btn-lg {
+  padding: 12px 28px;
+  font-size: var(--font-md);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ========================================
+   Form Inputs
+   ======================================== */
+.input {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--color-gray-6);
+  border-radius: var(--radius-md);
+  font-size: var(--font-base);
+  color: var(--color-dark);
+  outline: none;
+  transition: border-color var(--transition-fast);
+  width: 100%;
+}
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.1);
+}
+.input::placeholder {
+  color: var(--color-gray-4);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.input-group .input {
+  flex: 1;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+.input-group .btn {
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  height: 36px;
+}
+
+/* ========================================
+   Tables
+   ======================================== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-xs);
+}
+.table th {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-gray-7);
+  color: var(--color-gray-2);
+}
+.table tr:hover td {
+  background-color: #fff8f8;
+}
+.table .link {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+.table .link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* ========================================
+   Badge / Count Bubble
+   ======================================== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 11px;
+  border-radius: 9px;
+  line-height: 1;
+}
+
+/* ========================================
+   Links
+   ======================================== */
+.link-hover {
+  transition: color var(--transition-fast);
+  cursor: pointer;
+}
+.link-hover:hover {
+  color: var(--color-primary);
+}
+
+/* ========================================
+   Card
+   ======================================== */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast);
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   Tags
+   ======================================== */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: 2px;
+  line-height: 1.5;
+}
+.tag-orange {
+  background-color: #fff5e6;
+  color: var(--color-orange);
+  border: 1px solid #ffd9b3;
+}
+.tag-red {
+  background-color: #fff0f0;
+  color: var(--color-primary);
+  border: 1px solid #ffcccc;
+}
+.tag-green {
+  background-color: #f0f9eb;
+  color: var(--color-success);
+  border: 1px solid #d1edc4;
+}
+
+/* ========================================
+   Scrollbar
+   ======================================== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-gray-9);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-5);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-3);
+}
+
+/* ========================================
+   Transitions
+   ======================================== */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--transition-normal);
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: all var(--transition-normal);
+}
+.slide-down-enter-from,
+.slide-down-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: var(--font-xl);
+  }
+}
