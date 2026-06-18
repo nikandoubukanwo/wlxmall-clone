@@ -1,0 +1,940 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic:
+      - list:
+        - listitem [ref=e3]:
+          - link "您好，请登录" [ref=e4] [cursor=pointer]:
+            - /url: "javascript:"
+        - listitem [ref=e5]:
+          - link "免费注册" [ref=e6] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/reg.html
+        - generic [ref=e7]:
+          - listitem [ref=e8]:
+            - link "我的订单" [ref=e9] [cursor=pointer]:
+              - /url: https://www.wlxmall.com/member/order_self_support
+            - text: "|"
+          - listitem [ref=e10]:
+            - link "会员中心" [ref=e11] [cursor=pointer]:
+              - /url: https://www.wlxmall.com/member/index
+            - text: "|"
+          - listitem [ref=e12]:
+            - img [ref=e13]
+            - generic [ref=e14]: 4000-306-326
+            - text: "|"
+          - listitem [ref=e15]:
+            - img [ref=e16]
+            - link "4000306326" [ref=e17] [cursor=pointer]:
+              - /url: https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true
+  - generic [ref=e19]:
+    - link [ref=e21] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/
+      - img [ref=e22]
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - textbox "请输入采购的型号！" [ref=e26]
+        - generic [ref=e28]:
+          - link "TI、ADI、ST热门现货" [ref=e29] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/ti_hot.html
+          - link "三星电容现货" [ref=e30] [cursor=pointer]:
+            - /url: https://list.wlxmall.com/18.html
+          - link "村田电容现货" [ref=e31] [cursor=pointer]:
+            - /url: https://list.wlxmall.com/109.html
+          - link "国巨电容现货" [ref=e32] [cursor=pointer]:
+            - /url: https://list.wlxmall.com/95.html
+      - generic [ref=e33]:
+        - link "0 我的购物车" [ref=e34] [cursor=pointer]:
+          - /url: https://www.wlxmall.com/shopping_cart
+          - generic [ref=e35]: "0"
+          - text: 我的购物车
+        - link "0 询价订货单" [ref=e36] [cursor=pointer]:
+          - /url: "javascript:"
+          - generic [ref=e37]: "0"
+          - text: 询价订货单
+  - generic [ref=e40]:
+    - link "首页" [ref=e41] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/
+    - link "品牌目录" [ref=e42] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/brand_catalogue.html
+    - generic [ref=e43]: 可议价
+    - link "超级爆款" [ref=e44] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/hot.html
+    - link "热门现货" [ref=e45] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/hot_spot.html
+    - link "期货订购" [ref=e46] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/futures_ordering
+    - link "领券中心" [ref=e47] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/coupon/7.html
+    - link "海外代购" [ref=e48] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/overseas_list.html
+    - link "代理品牌" [ref=e49] [cursor=pointer]:
+      - /url: https://www.wlxmall.com/brand_dl.html
+  - generic [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53] [cursor=pointer]:
+          - link "微控制器" [ref=e54]:
+            - /url: javascript:;
+          - link "存储器" [ref=e55]:
+            - /url: javascript:;
+          - link "音视频" [ref=e56]:
+            - /url: javascript:;
+        - generic [ref=e57] [cursor=pointer]:
+          - link "电源管理" [ref=e58]:
+            - /url: javascript:;
+          - link "数据转换" [ref=e59]:
+            - /url: javascript:;
+          - link "传感器" [ref=e60]:
+            - /url: javascript:;
+        - generic [ref=e61] [cursor=pointer]:
+          - link "光电器件" [ref=e62]:
+            - /url: javascript:;
+          - link "滤波器" [ref=e63]:
+            - /url: javascript:;
+          - link "逻辑器件" [ref=e64]:
+            - /url: javascript:;
+        - generic [ref=e65] [cursor=pointer]:
+          - link "接口" [ref=e66]:
+            - /url: javascript:;
+          - link "放大器" [ref=e67]:
+            - /url: javascript:;
+          - link "时钟" [ref=e68]:
+            - /url: javascript:;
+          - link "射频" [ref=e69]:
+            - /url: javascript:;
+        - generic [ref=e70] [cursor=pointer]:
+          - link "二极管" [ref=e71]:
+            - /url: javascript:;
+          - link "晶体管" [ref=e72]:
+            - /url: javascript:;
+          - link "电路保护" [ref=e73]:
+            - /url: javascript:;
+        - generic [ref=e74] [cursor=pointer]:
+          - link "开关" [ref=e75]:
+            - /url: javascript:;
+          - link "继电器" [ref=e76]:
+            - /url: javascript:;
+          - link "晶振" [ref=e77]:
+            - /url: javascript:;
+        - generic [ref=e78] [cursor=pointer]:
+          - link "电阻" [ref=e79]:
+            - /url: javascript:;
+          - link "电容" [ref=e80]:
+            - /url: javascript:;
+          - link "电感" [ref=e81]:
+            - /url: javascript:;
+        - link "连接器/接插件/端子" [ref=e83] [cursor=pointer]:
+          - /url: javascript:;
+        - generic [ref=e84] [cursor=pointer]:
+          - link "开发套件" [ref=e85]:
+            - /url: javascript:;
+          - link "模块" [ref=e86]:
+            - /url: javascript:;
+        - generic [ref=e87] [cursor=pointer]:
+          - link "测试与测量" [ref=e88]:
+            - /url: javascript:;
+          - link "自动化" [ref=e89]:
+            - /url: javascript:;
+        - generic [ref=e90] [cursor=pointer]:
+          - link "更多商品类别" [ref=e91]:
+            - /url: /product
+          - link ">" [ref=e92]:
+            - /url: javascript:;
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic:
+            - link "万联芯城" [ref=e97] [cursor=pointer]:
+              - /url: /
+              - img [ref=e98]
+            - link [ref=e100] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/1450.html
+              - img [ref=e101]
+            - link [ref=e103] [cursor=pointer]:
+              - /url: /ti_hot.html
+              - img [ref=e104]
+        - list [ref=e105]:
+          - listitem "Page dot 1" [ref=e106] [cursor=pointer]
+          - listitem "Page dot 2" [ref=e107] [cursor=pointer]
+          - listitem "Page dot 3" [ref=e108] [cursor=pointer]
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - img "电子元器件采购网_原装电子元件网上商城-万联芯城官网-万联芯城" [ref=e112]
+          - text: HI~欢迎访问万联芯城
+        - link "登录" [ref=e114] [cursor=pointer]:
+          - /url: "javascript:"
+        - link "注册" [ref=e116] [cursor=pointer]:
+          - /url: /reg.html
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - text: 万联快报
+          - link "更多>" [ref=e119] [cursor=pointer]:
+            - /url: /all_list.html
+        - list [ref=e121]:
+          - listitem [ref=e122]:
+            - text: 快报
+            - link "万联芯城2026年劳动节放假通知" [ref=e123] [cursor=pointer]:
+              - /url: /info/48607.html
+          - listitem [ref=e124]:
+            - text: 快报
+            - link "万联芯城2026年清明节放假通知" [ref=e125] [cursor=pointer]:
+              - /url: /info/19806.html
+          - listitem [ref=e126]:
+            - text: 快报
+            - link "万联芯城2026年春节放假通知" [ref=e127] [cursor=pointer]:
+              - /url: /info/5237.html
+          - listitem [ref=e128]:
+            - text: 快报
+            - link "热烈祝贺万联芯科技荣获第八届蓝点奖“国际影响" [ref=e129] [cursor=pointer]:
+              - /url: /info/5229.html
+          - listitem [ref=e130]:
+            - text: 快报
+            - link "万联芯城2025国庆节放假通知" [ref=e131] [cursor=pointer]:
+              - /url: /info/5214.html
+      - generic:
+        - list:
+          - listitem [ref=e132] [cursor=pointer]:
+            - link "领券中心" [ref=e133]:
+              - /url: javascript:;
+              - img [ref=e134]
+              - paragraph [ref=e135]: 领券中心
+          - listitem [ref=e136] [cursor=pointer]:
+            - link "呆料寄售" [ref=e137]:
+              - /url: javascript:;
+              - img [ref=e138]
+              - paragraph [ref=e139]: 呆料寄售
+          - listitem [ref=e140] [cursor=pointer]:
+            - link "供应商登记" [ref=e141]:
+              - /url: javascript:;
+              - img [ref=e142]
+              - paragraph [ref=e143]: 供应商登记
+          - listitem [ref=e144] [cursor=pointer]:
+            - link "原厂直订" [ref=e145]:
+              - /url: javascript:;
+              - img [ref=e146]
+              - paragraph [ref=e147]: 原厂直订
+  - generic [ref=e148]:
+    - generic [ref=e149]: 为什么选择万联芯城
+    - img [ref=e151]
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - img [ref=e155]
+        - generic [ref=e156]:
+          - heading "知名元器件供应链服务平台" [level=2] [ref=e157]
+          - generic [ref=e158]:
+            - text: 11年服务10万注册用户
+            - text: 深圳市电子商会副会长单位
+            - text: 电子元器件行业“杰出电子商务平台”“优秀电商平台”
+            - text: 年流量超100万，位居行业前列。
+      - generic [ref=e159]:
+        - img [ref=e161]
+        - generic [ref=e162]:
+          - heading "卓越的元器件供应服务" [level=2] [ref=e163]
+          - generic [ref=e164]:
+            - text: 一站式服务：提供元器件现货采购、期货订购、BOM配单、紧缺物料、工厂呆料寄售等一站式服务。
+            - text: 全球化供应链：超600万SKU、300+商品类目、400+全球知名品牌、
+            - text: 3000+全球化供应商。
+            - text: 品质可靠：严控渠道、品质可靠、5道验货流程、每一颗料均可追溯。
+      - generic [ref=e165]:
+        - img [ref=e167]
+        - generic [ref=e168]:
+          - heading "“3位一体”全服务链团队" [level=2] [ref=e169]
+          - generic [ref=e170]:
+            - text: 专业、快速响应的在线咨询、报价服务
+            - text: 销售工程师团队提供一对一现场服务
+            - text: 专业采销团队达100人、强大的采销服务能力
+  - generic [ref=e171]:
+    - generic [ref=e172]:
+      - link "知名品牌" [ref=e173] [cursor=pointer]:
+        - /url: javascript:;
+      - link "国产器件" [ref=e174] [cursor=pointer]:
+        - /url: javascript:;
+    - table [ref=e176]:
+      - rowgroup [ref=e177]:
+        - row [ref=e178]:
+          - cell [ref=e179]:
+            - link [ref=e180] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/1.html
+              - img [ref=e181]
+          - cell [ref=e182]:
+            - link [ref=e183] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/69.html
+              - img [ref=e184]
+          - cell [ref=e185]:
+            - link [ref=e186] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/178.html
+              - img [ref=e187]
+          - cell [ref=e188]:
+            - link [ref=e189] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/54.html
+              - img [ref=e190]
+          - cell [ref=e191]:
+            - link [ref=e192] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/5.html
+              - img [ref=e193]
+          - cell [ref=e194]:
+            - link [ref=e195] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/48.html
+              - img [ref=e196]
+        - row [ref=e197]:
+          - cell [ref=e198]:
+            - link [ref=e199] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/6.html
+              - img [ref=e200]
+          - cell [ref=e201]:
+            - link [ref=e202] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/42.html
+              - img [ref=e203]
+          - cell [ref=e204]:
+            - link [ref=e205] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/102545.html
+              - img [ref=e206]
+          - cell [ref=e207]:
+            - link [ref=e208] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/3708.html
+              - img [ref=e209]
+          - cell [ref=e210]:
+            - link [ref=e211] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/11.html
+              - img [ref=e212]
+          - cell [ref=e213]:
+            - link [ref=e214] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/100033.html
+              - img [ref=e215]
+        - row [ref=e216]:
+          - cell [ref=e217]:
+            - link [ref=e218] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/680.html
+              - img [ref=e219]
+          - cell [ref=e220]:
+            - link [ref=e221] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/222.html
+              - img [ref=e222]
+          - cell [ref=e223]:
+            - link [ref=e224] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/201.html
+              - img [ref=e225]
+          - cell [ref=e226]:
+            - link [ref=e227] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/7.html
+              - img [ref=e228]
+          - cell [ref=e229]:
+            - link [ref=e230] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/177.html
+              - img [ref=e231]
+          - cell [ref=e232]:
+            - link [ref=e233] [cursor=pointer]:
+              - /url: https://list.wlxmall.com/242.html
+              - img [ref=e234]
+  - generic [ref=e235]:
+    - generic [ref=e236]:
+      - generic [ref=e237]: 我要找料
+      - generic [ref=e238]:
+        - list [ref=e239]:
+          - listitem [ref=e240]: "*型号"
+          - listitem [ref=e241]:
+            - textbox [ref=e242]
+        - list [ref=e243]:
+          - listitem [ref=e244]: "*数量"
+          - listitem [ref=e245]:
+            - textbox [ref=e246]
+            - combobox [ref=e247]:
+              - option "pcs" [selected]
+              - option "个"
+        - list [ref=e248]:
+          - listitem [ref=e249]: 品牌
+          - listitem [ref=e250]:
+            - textbox [ref=e251]
+        - list [ref=e252]:
+          - listitem [ref=e253]: 目标单价
+          - listitem [ref=e254]:
+            - generic [ref=e255]: ￥
+            - textbox [ref=e256]
+        - list [ref=e257]:
+          - listitem [ref=e258]: 备注
+          - listitem [ref=e259]:
+            - textbox [ref=e260]
+        - link "提交" [ref=e262] [cursor=pointer]:
+          - /url: javascript:;
+    - generic [ref=e263]:
+      - generic [ref=e264]: 最新热卖型号
+      - generic [ref=e265]:
+        - table [ref=e266]:
+          - rowgroup [ref=e267]:
+            - row "商品名称 商品型号 品牌 价格 库存" [ref=e268]:
+              - cell "商品名称" [ref=e269]
+              - cell "商品型号" [ref=e270]
+              - cell "品牌" [ref=e271]
+              - cell "价格" [ref=e272]
+              - cell "库存" [ref=e273]
+        - table [ref=e275]:
+          - rowgroup [ref=e276]:
+            - row "IGBT管/模块 FGW75XS120C FUJI(富士电机) 16.90500 7200个" [ref=e277]:
+              - cell "IGBT管/模块" [ref=e278]
+              - cell "FGW75XS120C" [ref=e279]:
+                - link "FGW75XS120C" [ref=e280] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343622.html
+              - cell "FUJI(富士电机)" [ref=e281]
+              - cell "16.90500" [ref=e282]
+              - cell "7200个" [ref=e283]
+            - row "IGBT管/模块 FGW50XS65C FUJI(富士电机) 8.19950 12000个" [ref=e284]:
+              - cell "IGBT管/模块" [ref=e285]
+              - cell "FGW50XS65C" [ref=e286]:
+                - link "FGW50XS65C" [ref=e287] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343617.html
+              - cell "FUJI(富士电机)" [ref=e288]
+              - cell "8.19950" [ref=e289]
+              - cell "12000个" [ref=e290]
+            - row "IGBT管/模块 FGW75XS65D FUJI(富士电机) 13.83450 1200个" [ref=e291]:
+              - cell "IGBT管/模块" [ref=e292]
+              - cell "FGW75XS65D" [ref=e293]:
+                - link "FGW75XS65D" [ref=e294] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343649.html
+              - cell "FUJI(富士电机)" [ref=e295]
+              - cell "13.83450" [ref=e296]
+              - cell "1200个" [ref=e297]
+            - row "IGBT管/模块 FGW75XS65C FUJI(富士电机) 10.60300 4800个" [ref=e298]:
+              - cell "IGBT管/模块" [ref=e299]
+              - cell "FGW75XS65C" [ref=e300]:
+                - link "FGW75XS65C" [ref=e301] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343626.html
+              - cell "FUJI(富士电机)" [ref=e302]
+              - cell "10.60300" [ref=e303]
+              - cell "4800个" [ref=e304]
+            - row "IGBT管/模块 FGW40XS120C FUJI(富士电机) 10.15450 2400个" [ref=e305]:
+              - cell "IGBT管/模块" [ref=e306]
+              - cell "FGW40XS120C" [ref=e307]:
+                - link "FGW40XS120C" [ref=e308] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343619.html
+              - cell "FUJI(富士电机)" [ref=e309]
+              - cell "10.15450" [ref=e310]
+              - cell "2400个" [ref=e311]
+            - row "IGBT管/模块 FGW40N120HD FUJI(富士电机) 19.09000 4800个" [ref=e312]:
+              - cell "IGBT管/模块" [ref=e313]
+              - cell "FGW40N120HD" [ref=e314]:
+                - link "FGW40N120HD" [ref=e315] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343650.html
+              - cell "FUJI(富士电机)" [ref=e316]
+              - cell "19.09000" [ref=e317]
+              - cell "4800个" [ref=e318]
+            - row "IGBT管/模块 FGZ75XS120C FUJI(富士电机) 27.48500 200个" [ref=e319]:
+              - cell "IGBT管/模块" [ref=e320]
+              - cell "FGZ75XS120C" [ref=e321]:
+                - link "FGZ75XS120C" [ref=e322] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343643.html
+              - cell "FUJI(富士电机)" [ref=e323]
+              - cell "27.48500" [ref=e324]
+              - cell "200个" [ref=e325]
+            - row "IGBT管/模块 2MBI600VN-120-50 FUJI(富士电机) 603.75000 78个" [ref=e326]:
+              - cell "IGBT管/模块" [ref=e327]
+              - cell "2MBI600VN-120-50" [ref=e328]:
+                - link "2MBI600VN-120-50" [ref=e329] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343618.html
+              - cell "FUJI(富士电机)" [ref=e330]
+              - cell "603.75000" [ref=e331]
+              - cell "78个" [ref=e332]
+            - row "IGBT管/模块 FGW40N120WD FUJI(富士电机) 14.03000 4800个" [ref=e333]:
+              - cell "IGBT管/模块" [ref=e334]
+              - cell "FGW40N120WD" [ref=e335]:
+                - link "FGW40N120WD" [ref=e336] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343640.html
+              - cell "FUJI(富士电机)" [ref=e337]
+              - cell "14.03000" [ref=e338]
+              - cell "4800个" [ref=e339]
+            - row "IGBT管/模块 FGW50XS65D FUJI(富士电机) 10.77550 1800个" [ref=e340]:
+              - cell "IGBT管/模块" [ref=e341]
+              - cell "FGW50XS65D" [ref=e342]:
+                - link "FGW50XS65D" [ref=e343] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343615.html
+              - cell "FUJI(富士电机)" [ref=e344]
+              - cell "10.77550" [ref=e345]
+              - cell "1800个" [ref=e346]
+            - row "IGBT管/模块 2MBI400VB-060-50 FUJI(富士电机) 353.05000 60个" [ref=e347]:
+              - cell "IGBT管/模块" [ref=e348]
+              - cell "2MBI400VB-060-50" [ref=e349]:
+                - link "2MBI400VB-060-50" [ref=e350] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343609.html
+              - cell "FUJI(富士电机)" [ref=e351]
+              - cell "353.05000" [ref=e352]
+              - cell "60个" [ref=e353]
+            - row "IGBT管/模块 FGZ75XS65C FUJI(富士电机) 15.58250 3000个" [ref=e354]:
+              - cell "IGBT管/模块" [ref=e355]
+              - cell "FGZ75XS65C" [ref=e356]:
+                - link "FGZ75XS65C" [ref=e357] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343627.html
+              - cell "FUJI(富士电机)" [ref=e358]
+              - cell "15.58250" [ref=e359]
+              - cell "3000个" [ref=e360]
+            - row "IGBT管/模块 FGW75N60HC FUJI(富士电机) 20.53900 2400个" [ref=e361]:
+              - cell "IGBT管/模块" [ref=e362]
+              - cell "FGW75N60HC" [ref=e363]:
+                - link "FGW75N60HC" [ref=e364] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343606.html
+              - cell "FUJI(富士电机)" [ref=e365]
+              - cell "20.53900" [ref=e366]
+              - cell "2400个" [ref=e367]
+            - row "IGBT管/模块 FGW35N60HC FUJI(富士电机) 10.61450 2400个" [ref=e368]:
+              - cell "IGBT管/模块" [ref=e369]
+              - cell "FGW35N60HC" [ref=e370]:
+                - link "FGW35N60HC" [ref=e371] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343614.html
+              - cell "FUJI(富士电机)" [ref=e372]
+              - cell "10.61450" [ref=e373]
+              - cell "2400个" [ref=e374]
+            - row "场效应管(MOSFET) FMW60N027S2FDHF FUJI(富士电机) 34.76450 1800个" [ref=e375]:
+              - cell "场效应管(MOSFET)" [ref=e376]
+              - cell "FMW60N027S2FDHF" [ref=e377]:
+                - link "FMW60N027S2FDHF" [ref=e378] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/4195877.html
+              - cell "FUJI(富士电机)" [ref=e379]
+              - cell "34.76450" [ref=e380]
+              - cell "1800个" [ref=e381]
+            - row "IGBT管/模块 FGW75XS120C FUJI(富士电机) 16.90500 7200个" [ref=e382]:
+              - cell "IGBT管/模块" [ref=e383]
+              - cell "FGW75XS120C" [ref=e384]:
+                - link "FGW75XS120C" [ref=e385] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343622.html
+              - cell "FUJI(富士电机)" [ref=e386]
+              - cell "16.90500" [ref=e387]
+              - cell "7200个" [ref=e388]
+            - row "IGBT管/模块 FGW50XS65C FUJI(富士电机) 8.19950 12000个" [ref=e389]:
+              - cell "IGBT管/模块" [ref=e390]
+              - cell "FGW50XS65C" [ref=e391]:
+                - link "FGW50XS65C" [ref=e392] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343617.html
+              - cell "FUJI(富士电机)" [ref=e393]
+              - cell "8.19950" [ref=e394]
+              - cell "12000个" [ref=e395]
+            - row "IGBT管/模块 FGW75XS65D FUJI(富士电机) 13.83450 1200个" [ref=e396]:
+              - cell "IGBT管/模块" [ref=e397]
+              - cell "FGW75XS65D" [ref=e398]:
+                - link "FGW75XS65D" [ref=e399] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343649.html
+              - cell "FUJI(富士电机)" [ref=e400]
+              - cell "13.83450" [ref=e401]
+              - cell "1200个" [ref=e402]
+            - row "IGBT管/模块 FGW75XS65C FUJI(富士电机) 10.60300 4800个" [ref=e403]:
+              - cell "IGBT管/模块" [ref=e404]
+              - cell "FGW75XS65C" [ref=e405]:
+                - link "FGW75XS65C" [ref=e406] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343626.html
+              - cell "FUJI(富士电机)" [ref=e407]
+              - cell "10.60300" [ref=e408]
+              - cell "4800个" [ref=e409]
+            - row "IGBT管/模块 FGW40XS120C FUJI(富士电机) 10.15450 2400个" [ref=e410]:
+              - cell "IGBT管/模块" [ref=e411]
+              - cell "FGW40XS120C" [ref=e412]:
+                - link "FGW40XS120C" [ref=e413] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343619.html
+              - cell "FUJI(富士电机)" [ref=e414]
+              - cell "10.15450" [ref=e415]
+              - cell "2400个" [ref=e416]
+            - row "IGBT管/模块 FGW40N120HD FUJI(富士电机) 19.09000 4800个" [ref=e417]:
+              - cell "IGBT管/模块" [ref=e418]
+              - cell "FGW40N120HD" [ref=e419]:
+                - link "FGW40N120HD" [ref=e420] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343650.html
+              - cell "FUJI(富士电机)" [ref=e421]
+              - cell "19.09000" [ref=e422]
+              - cell "4800个" [ref=e423]
+            - row "IGBT管/模块 FGZ75XS120C FUJI(富士电机) 27.48500 200个" [ref=e424]:
+              - cell "IGBT管/模块" [ref=e425]
+              - cell "FGZ75XS120C" [ref=e426]:
+                - link "FGZ75XS120C" [ref=e427] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343643.html
+              - cell "FUJI(富士电机)" [ref=e428]
+              - cell "27.48500" [ref=e429]
+              - cell "200个" [ref=e430]
+            - row "IGBT管/模块 2MBI600VN-120-50 FUJI(富士电机) 603.75000 78个" [ref=e431]:
+              - cell "IGBT管/模块" [ref=e432]
+              - cell "2MBI600VN-120-50" [ref=e433]:
+                - link "2MBI600VN-120-50" [ref=e434] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343618.html
+              - cell "FUJI(富士电机)" [ref=e435]
+              - cell "603.75000" [ref=e436]
+              - cell "78个" [ref=e437]
+            - row "IGBT管/模块 FGW40N120WD FUJI(富士电机) 14.03000 4800个" [ref=e438]:
+              - cell "IGBT管/模块" [ref=e439]
+              - cell "FGW40N120WD" [ref=e440]:
+                - link "FGW40N120WD" [ref=e441] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343640.html
+              - cell "FUJI(富士电机)" [ref=e442]
+              - cell "14.03000" [ref=e443]
+              - cell "4800个" [ref=e444]
+            - row "IGBT管/模块 FGW50XS65D FUJI(富士电机) 10.77550 1800个" [ref=e445]:
+              - cell "IGBT管/模块" [ref=e446]
+              - cell "FGW50XS65D" [ref=e447]:
+                - link "FGW50XS65D" [ref=e448] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343615.html
+              - cell "FUJI(富士电机)" [ref=e449]
+              - cell "10.77550" [ref=e450]
+              - cell "1800个" [ref=e451]
+            - row "IGBT管/模块 2MBI400VB-060-50 FUJI(富士电机) 353.05000 60个" [ref=e452]:
+              - cell "IGBT管/模块" [ref=e453]
+              - cell "2MBI400VB-060-50" [ref=e454]:
+                - link "2MBI400VB-060-50" [ref=e455] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343609.html
+              - cell "FUJI(富士电机)" [ref=e456]
+              - cell "353.05000" [ref=e457]
+              - cell "60个" [ref=e458]
+            - row "IGBT管/模块 FGZ75XS65C FUJI(富士电机) 15.58250 3000个" [ref=e459]:
+              - cell "IGBT管/模块" [ref=e460]
+              - cell "FGZ75XS65C" [ref=e461]:
+                - link "FGZ75XS65C" [ref=e462] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343627.html
+              - cell "FUJI(富士电机)" [ref=e463]
+              - cell "15.58250" [ref=e464]
+              - cell "3000个" [ref=e465]
+            - row "IGBT管/模块 FGW75N60HC FUJI(富士电机) 20.53900 2400个" [ref=e466]:
+              - cell "IGBT管/模块" [ref=e467]
+              - cell "FGW75N60HC" [ref=e468]:
+                - link "FGW75N60HC" [ref=e469] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343606.html
+              - cell "FUJI(富士电机)" [ref=e470]
+              - cell "20.53900" [ref=e471]
+              - cell "2400个" [ref=e472]
+            - row "IGBT管/模块 FGW35N60HC FUJI(富士电机) 10.61450 2400个" [ref=e473]:
+              - cell "IGBT管/模块" [ref=e474]
+              - cell "FGW35N60HC" [ref=e475]:
+                - link "FGW35N60HC" [ref=e476] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/108343614.html
+              - cell "FUJI(富士电机)" [ref=e477]
+              - cell "10.61450" [ref=e478]
+              - cell "2400个" [ref=e479]
+            - row "场效应管(MOSFET) FMW60N027S2FDHF FUJI(富士电机) 34.76450 1800个" [ref=e480]:
+              - cell "场效应管(MOSFET)" [ref=e481]
+              - cell "FMW60N027S2FDHF" [ref=e482]:
+                - link "FMW60N027S2FDHF" [ref=e483] [cursor=pointer]:
+                  - /url: https://item.wlxmall.com/4195877.html
+              - cell "FUJI(富士电机)" [ref=e484]
+              - cell "34.76450" [ref=e485]
+              - cell "1800个" [ref=e486]
+  - generic [ref=e487]:
+    - generic [ref=e488]: 服务行业
+    - img [ref=e490]
+    - generic [ref=e492]:
+      - generic [ref=e493]:
+        - generic:
+          - generic [ref=e494]:
+            - list:
+              - listitem [ref=e495]:
+                - img [ref=e496]
+                - paragraph [ref=e497]: 工业应用
+              - listitem [ref=e498]:
+                - img [ref=e499]
+                - paragraph [ref=e500]: 电网基础设施
+              - listitem [ref=e501]:
+                - img [ref=e502]
+                - paragraph [ref=e503]: 医疗应用
+              - listitem [ref=e504]:
+                - img [ref=e505]
+                - paragraph [ref=e506]: 新能源
+          - generic [ref=e507]:
+            - listitem [ref=e508]:
+              - img [ref=e509]
+              - paragraph [ref=e510]: 汽车电子
+            - listitem [ref=e511]:
+              - img [ref=e512]
+              - paragraph [ref=e513]: 人工智能
+            - listitem [ref=e514]:
+              - img [ref=e515]
+              - paragraph [ref=e516]: 智能家居
+            - listitem [ref=e517]:
+              - img [ref=e518]
+              - paragraph [ref=e519]: 仪器仪表
+      - button "Previous" [disabled] [ref=e520]:
+        - img [ref=e521]
+      - button "Next" [ref=e523] [cursor=pointer]:
+        - img [ref=e524]
+  - generic [ref=e526]:
+    - generic [ref=e527]: 资讯中心
+    - img [ref=e529]
+    - generic:
+      - generic [ref=e530]:
+        - generic [ref=e531]:
+          - text: 品牌资讯
+          - link "更多>" [ref=e532] [cursor=pointer]:
+            - /url: /company_list.html
+        - link [ref=e534] [cursor=pointer]:
+          - /url: https://www.wlxmall.com/info/5222.html
+          - img [ref=e535]
+          - generic [ref=e536]:
+            - generic [ref=e537]: 一文读懂亚德诺半导体（ADI）公司、核心产品、运用领域 - 万联芯城
+            - paragraph [ref=e538]: 亚德诺半导体是全球领先的高性能模拟、混合信号和数字信号处理（DSP）集成电路（IC） 设计、制造和营销厂商。公司成立于1965年，总部位于美国马萨诸塞州威尔明顿。ADI以其卓越的技术、高质量的产品和深厚的系统级专业知识而闻名于世，在工业、汽车、通信和消费电子等多个关键领域扮演着不可或缺的角色。 一、 公司概况与发展历程 成立与早期（1965-1980s）： 由Ray Stata和Matthew Lorber联合创立，最初专注于运算放大器等模拟模块。公司很早就在数据转换器（ADC/DAC）领域确立了技术领先地位。 技术扩张（1990s-2000s）： 通过内部研发和一系列战略收购，将产品线扩展到DSP、MEMS传感器、电源管理、射频（RF）IC等领域。 转型为系统级解决方案提供商（2010s至今）： ADI进行了数次改变行业格局的重大收购，其中最著名的是： 2017年收购Linear Technology（凌力尔特）： 这次收购极大地加强了ADI在电源管理IC和高性能模拟IC领域的实力，使其成为无可争议的行业领导者之一。 2021年收购Maxim Integrated（美信半导体）： 这次收购进一步巩固了ADI在汽车、数据中心和健康医疗领域的市场地位，丰富了其信号链和电源产品组合。 如今，ADI不仅是模拟IC技术的领导者，更是一家能够提供完整端到端解决方案的半导体公司，帮助客户解决最复杂的工程挑战。 二、 核心产品与技术 ADI的产品组合极其广泛，但其核心可以归结为三大支柱：数据转换器、放大器和电源管理，它们共同构成了完整的信号处理链。 1、数据转换器（ADC/DAC） 模数转换器（ADC）： 将现实世界的模拟信号（如温度、声音、压力、光）转换为数字信号，以便处理器进行计算和分析。ADI的ADC在分辨率（精度）和采样率（速度）方面长期保持全球领先地位，是许多高要求应用的“黄金标准”。 数模转换器（DAC）： 将处理后的数字信号转换回模拟信号，用于驱动执行器、扬声器、显示器等。其性能同样卓越。 2、放大器 用于放大、缓冲、滤波或调整模拟信号。ADI提供各种类型的放大器，如运算放大器、仪表放大器和差分放大器，以其低噪声、高精度和低功耗著称。 3、电源管理IC （主要来自收购的Linear Technology） 用于管理、分配和优化电子系统中的电源。包括： 电压稳压器：将输入电压转换为稳定、干净的输出电压。 电源模块：高度集成、易于使用的电源解决方案。 电池管理IC：用于智能手机、电动汽车等，实现安全高效的充电和电量监控。 4、射频（RF）与微波IC 用于无线通信系统，包括射频收发器、微波上下变频器等，是5G基站、雷达、卫星通信的核心。 5、微机电系统（MEMS）传感器 主要提供惯性测量单元（IMU），用于检测物体的加速度、角速度等运动状态，广泛应用于工业机器人、自动驾驶、航空航天等领域。 6、数字信号处理器（DSP） ADI的SHARC和Blackfin系列DSP在音频处理、工业视觉和军事应用中有很强的传统优势。 7、嵌入式处理器与解决方案 提供基于ARM内核的微控制器，并围绕其核心模拟技术构建完整的系统级解决方案和参考设计，加速客户产品上市时间。 三、 核心优势 ADI的长期成功建立在以下几个核心优势之上： 1、无与伦比的技术深度与广度： 在高端模拟IC领域，尤其是在高精度、高速数据转换器和线性产品上，ADI的技术壁垒极高，竞争对手难以企及。 2、强大的系统级专业知识： ADI不仅仅是卖芯片，其工程师团队深刻理解客户的应用场景（如汽车雷达、工厂自动化），能够提供从传感器到云端、从硬件到软件的完整解决方案。 3、卓越的质量与可靠性： 产品以极高的可靠性和稳定性著称，这对于汽车、工业、医疗等对安全性和长期稳定性要求极高的领域至关重要。 4、“一站式”解决方案能力： 通过收购Linear Tech和Maxim，ADI能够提供业界最全面的高性能模拟和电源管理产品组合，客户可以从单一供应商获得大部分关键元器件，简化了供应链和设计流程。 5、深厚的客户关系与长期支持： ADI与各行业的头部客户建立了长期战略合作伙伴关系，共同定义未来技术路线图，提供长期的产品供应支持。 四、 主要应用领域 ADI的技术是连接物理世界与数字世界的桥梁，其产品几乎应用于所有电子领域，尤其在以下关键市场表现突出： 1、工业 工厂自动化： 工业机器人、电机控制、PLC（可编程逻辑控制器）、仪器仪表。 数字化工厂： 状态监控（CbM）传感器系统，通过振动分析预测设备故障。 测试与测量： 高精度示波器、频谱分析仪。 2、汽车 电动化： 电池管理系统（BMS）、车载充电器（OBC）、直流-直流转换器。 智能化： 车载雷达、激光雷达（LiDAR）、惯性导航（IMU）、信息娱乐系统、舱内监控。 ADI是汽车电气化和自动驾驶技术的关键赋能者。 3、通信 有线通信： 数据中心的光纤通信、高速接口。 无线通信： 5G基站（ Massive MIMO射频单元、射频前端）、卫星通信系统。 4、消费电子 音频与视频： 专业音频设备、家庭影院、智能手机中的音频编解码器。 健康与可穿戴设备： 用于健康监测的光电传感器、生物传感器。 虚拟/增强现实（VR/AR）： 高性能惯性传感器（IMU）提供精准的运动追踪。 5、医疗健康 医疗影像： CT扫描、MRI、超声设备中的高精度数据采集系统。 病人监护： 生命体征监测仪、便携式医疗设备。 诊断设备： 血液分析仪、基因测序仪。 6、能源与基础设施 智慧电网： 智能电表、电网保护与控制系统。 航空航天与国防： 雷达、电子战、卫星通信系统。 五、总结 亚德诺半导体（ADI）是一家在高性能模拟技术领域拥有绝对领导地位的公司。它通过将物理世界与数字世界智能地连接起来，赋能各行各业实现创新。其核心竞争力在于深厚的技术积累、顶尖的产品性能、卓越的可靠性以及提供系统级解决方案的能力。在工业4.0、汽车电动化/智能化、5/6G通信等大趋势的推动下，ADI作为关键底层技术提供商的角色将愈发重要。
+        - list [ref=e540]:
+          - listitem [ref=e541]:
+            - generic [ref=e542]: 2025-10-21
+            - link "MDD辰达半导体推出低内阻、高开关频率MOS管，解决车载" [ref=e544] [cursor=pointer]:
+              - /url: /info/5228.html
+            - generic [ref=e545]: 243次
+          - listitem [ref=e546]:
+            - generic [ref=e547]: 2025-10-21
+            - link "国产替代正当时：MDD辰达芯推出逻辑IC产品全系列，提供" [ref=e549] [cursor=pointer]:
+              - /url: /info/5227.html
+            - generic [ref=e550]: 1262次
+          - listitem [ref=e551]:
+            - generic [ref=e552]: 2025-10-21
+            - link "Anlogic安路科技简介、核心产品、优势、运用" [ref=e554] [cursor=pointer]:
+              - /url: /info/5226.html
+            - generic [ref=e555]: 1485次
+          - listitem [ref=e556]:
+            - generic [ref=e557]: 2025-10-09
+            - link "一文读懂思佳讯Skyworks公司、产品、优势、运用" [ref=e559] [cursor=pointer]:
+              - /url: /info/5224.html
+            - generic [ref=e560]: 581次
+      - generic [ref=e561]:
+        - generic [ref=e562]:
+          - text: 行业资讯
+          - link "更多>" [ref=e563] [cursor=pointer]:
+            - /url: /industry_list.html
+        - link [ref=e565] [cursor=pointer]:
+          - /url: https://www.wlxmall.com/info/5231.html
+          - img [ref=e566]
+          - generic [ref=e567]:
+            - generic [ref=e568]: 一文读什么是光模块、内部结构、所用器件、用途？ - 万联芯城
+            - paragraph [ref=e569]: 1. 光模块是什么？ 光模块，全称光收发一体模块，是光纤通信系统中的核心器件。它的作用简单来说就是完成光电转换。 在发送端：将设备（如交换机、路由器）产生的电信号转换为光信号，通过光纤传输出去。 在接收端：将光纤传输过来的光信号转换为电信号，提供给设备处理。 你可以把它理解为光纤网络的“翻译官”和“搬运工”，是连接电子设备与光纤世界的桥梁。 2. 内部结构与主要器件： 一个标准的光模块内部是一个精密的微系统，集成了光学、电子和机械组件。其主要结构可分为以下几大部分： （1）核心器件详解： a. 光学部分 激光器 (LD - Laser Diode)：发送端的核心，负责将电信号调制成特定波长和功率的光信号。 类型： VCSEL：垂直腔面发射激光器，成本低、功耗小，主要用于短距离多模光纤（如850nm）。 DFB：分布式反馈激光器，波长稳定、色散小，用于中长距离单模光纤（如1310nm，1550nm）。 EML：电吸收调制激光器，将激光器和调制器集成，性能更高，用于高速长距离传输。 光探测器 (PD - Photodetector)：接收端的核心，负责将接收到的光信号转换为微弱的电流信号。 类型： PIN：PIN光电二极管，用于常规灵敏度要求的场景。 APD：雪崩光电二极管，具有内部增益，灵敏度极高，用于长距离或弱光信号接收。 b. 电子部分 激光驱动器 (LDD - Laser Diode Driver)：为激光器提供精准的偏置电流和调制电流，确保光信号的质量。 跨阻放大器 (TIA - Trans-Impedance Amplifier)：将光探测器输出的微弱电流信号放大并转换为电压信号。 限幅放大器 (LA - Limiting Amplifier)：将TIA输出的电压信号进一步放大和整形，生成数字电平信号。 时钟数据恢复芯片 (CDR - Clock and Data Recovery)：从接收到的数据流中提取出时钟信号，并重新对数据进行定时，消除抖动，是高速模块（通常≥10G）的关键器件。 主控芯片 (MCU)：光模块的“大脑”。实现DDM (数字诊断监控) 功能，实时监测模块的温度、供电电压、发射/接收光功率、激光器偏置电流等参数，并通过I2C接口与主机设备通信。 c. 支持与接口部分 光学透镜与隔离器：用于聚焦激光、耦合光纤，以及防止反射光干扰激光器工作。 柔性电路板 (FPC) / 高速PCB：连接所有电子元器件。 金手指 (Electrical Interface)：插入设备光模块槽位的电气接口，用于供电和高速电信号传输。 外壳与拉环：提供机械保护、散热和插拔功能。常见标准有SFP， SFP+， QSFP28， OSFP等。 3. 主要用途与应用场景 光模块是构建所有现代有线网络的基础，其应用无处不在： （1）、数据中心与云计算： 服务器与交换机互连：机架内（ToR）、机架间（EoR/MoR）的连接。 数据中心互连 (DCI)：同一园区或不同地域数据中心之间的高速互联，对速率和距离要求极高。 主要使用高速、高密度、低功耗的模块，如100G/200G/400G/800G的QSFP-DD、OSFP模块。 （2）、电信与宽带接入网络： 移动承载网 (5G前传、中传、回传)：连接基站、汇聚点和核心网。 光纤到户 (FTTH)：家庭宽带的光猫（ONT）与运营商局端设备（OLT）的连接，常用PON模块（如GPON， XG-PON）。 城域网与骨干网：长距离、大容量的省际、国家间通信，常用高性能的相干光模块。 （3）、企业网与园区网： 办公楼、校园内部的核心、汇聚、接入层交换机之间的光纤连接。 （4）、其他特殊领域： 高清视频传输：如广电、现场制作。 工业与军事通信：恶劣环境下的可靠通信。 高性能计算 (HPC) 与 存储区域网络 (SAN)：如InfiniBand， Fibre Channel网络。 4. 关键选型参数 在实际使用中，需要根据需求选择合适的光模块，主要参数包括： 速率：1.25G，10G， 25G，40G，100G，200G，400G，800G,1.6T等。 传输距离：短距（SR， 几百米）、中距（IR， 2-40km）、长距（LR， 40km以上）。 中心波长：850nm（多模）， 1310nm， 1550nm（单模）等。 光纤类型：多模光纤（MMF）或单模光纤（SMF）。 封装形式：SFP， SFP+， QSFP+， QSFP28， QSFP-DD， OSFP等。 功耗：对于高密度部署的数据中心至关重要。 数字诊断监控 (DDM)：方便网络管理和故障排查。 总结来说，光模块是一个高度集成的精密光电产品，它通过内部激光器、探测器及一系列控制芯片的协同工作，实现了信息在电域和光域之间的高效、可靠转换，是构建当今高速信息社会的基石之一。
+        - list [ref=e571]:
+          - listitem [ref=e572]:
+            - generic [ref=e573]: 2025-10-10
+            - link "一文读懂卫星通信器件种类、功能、厂商、发展趋势" [ref=e575] [cursor=pointer]:
+              - /url: /info/5225.html
+            - generic [ref=e576]: 2439次
+          - listitem [ref=e577]:
+            - generic [ref=e578]: 2025-09-28
+            - link "国产FPGA公司、核心产品、应用介绍" [ref=e580] [cursor=pointer]:
+              - /url: /info/5223.html
+            - generic [ref=e581]: 4499次
+          - listitem [ref=e582]:
+            - generic [ref=e583]: 2025-08-21
+            - link "一文读懂数字隔离器芯片的原理、运用、品牌、选型要点" [ref=e585] [cursor=pointer]:
+              - /url: /info/5073.html
+            - generic [ref=e586]: 568次
+          - listitem [ref=e587]:
+            - generic [ref=e588]: 2025-06-19
+            - link "一文读懂DRAM（动态随机存取存储器）工作原理、分类、主" [ref=e590] [cursor=pointer]:
+              - /url: /info/4890.html
+            - generic [ref=e591]: 1990次
+      - generic [ref=e592]:
+        - generic [ref=e593]:
+          - text: 产品资讯
+          - link "更多>" [ref=e594] [cursor=pointer]:
+            - /url: /products_list.html
+        - list [ref=e596]:
+          - listitem [ref=e597]:
+            - generic [ref=e598]: 2026-05-25
+            - link "MDD辰达半导体推出大功率高防护TVS系列 专为小型BM" [ref=e600] [cursor=pointer]:
+              - /url: /info/48608.html
+            - generic [ref=e601]: 20次
+          - listitem [ref=e602]:
+            - generic [ref=e603]: 2026-04-21
+            - link "芯伯乐高效3A降压方案：XBL2596 PCB设计指南" [ref=e605] [cursor=pointer]:
+              - /url: /info/48606.html
+            - generic [ref=e606]: 179次
+          - listitem [ref=e607]:
+            - generic [ref=e608]: 2026-04-21
+            - link "芯伯乐高效灵活降压方案：XBL1509B PCB设计指南" [ref=e610] [cursor=pointer]:
+              - /url: /info/48605.html
+            - generic [ref=e611]: 109次
+          - listitem [ref=e612]:
+            - generic [ref=e613]: 2026-04-21
+            - link "【应用】基于XBLW LM2596的DCDC转换器模块设" [ref=e615] [cursor=pointer]:
+              - /url: /info/48604.html
+            - generic [ref=e616]: 529次
+          - listitem [ref=e617]:
+            - generic [ref=e618]: 2026-04-21
+            - link "【应用】宽压输入，高效稳压：XBL1509 DCDC降压" [ref=e620] [cursor=pointer]:
+              - /url: /info/48603.html
+            - generic [ref=e621]: 59次
+          - listitem [ref=e622]:
+            - generic [ref=e623]: 2026-04-16
+            - link "MDD辰达半导体功率TVS新升级：封装不变，功率倍增" [ref=e625] [cursor=pointer]:
+              - /url: /info/48602.html
+            - generic [ref=e626]: 99次
+          - listitem [ref=e627]:
+            - generic [ref=e628]: 2026-04-14
+            - link "Infineon英飞凌 IMW65R010M2H 产品介" [ref=e630] [cursor=pointer]:
+              - /url: /info/48601.html
+            - generic [ref=e631]: 377次
+          - listitem [ref=e632]:
+            - generic [ref=e633]: 2026-04-14
+            - link "Infineon英飞凌 AIMBG75R050M2H 产" [ref=e635] [cursor=pointer]:
+              - /url: /info/48600.html
+            - generic [ref=e636]: 499次
+          - listitem [ref=e637]:
+            - generic [ref=e638]: 2026-04-14
+            - link "Infineon英飞凌 BAT15-02ELS 产品介绍" [ref=e640] [cursor=pointer]:
+              - /url: /info/48599.html
+            - generic [ref=e641]: 468次
+          - listitem [ref=e642]:
+            - generic [ref=e643]: 2026-04-14
+            - link "Infineon英飞凌 IMW120R060M1H 产品" [ref=e645] [cursor=pointer]:
+              - /url: /info/48598.html
+            - generic [ref=e646]: 639次
+  - generic [ref=e647]:
+    - list:
+      - listitem [ref=e648]: 海量现货，种类齐全
+      - listitem [ref=e649]: 报价讯捷，闪电出货
+      - listitem [ref=e650]: 原厂渠道，正品保证
+      - listitem [ref=e651]: 批量采购，支持议价
+      - listitem [ref=e652]: 专属客服，一对一服务
+  - generic [ref=e654]:
+    - generic [ref=e655]:
+      - generic [ref=e657]:
+        - term [ref=e658]: 新手入门
+        - definition [ref=e659]:
+          - link "注册登录" [ref=e660] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/register.html
+        - definition [ref=e661]:
+          - link "找回密码" [ref=e662] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/password.html
+        - definition [ref=e663]:
+          - link "购物流程" [ref=e664] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/buy_flow.html
+        - definition [ref=e665]:
+          - link "账号设置" [ref=e666] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/set_id.html
+        - definition [ref=e667]:
+          - link "常见问题" [ref=e668] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/faq.html
+      - generic [ref=e670]:
+        - term [ref=e671]: 购物指南
+        - definition [ref=e672]:
+          - link "支付方式" [ref=e673] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/online_pay.html
+        - definition [ref=e674]:
+          - link "配送方式" [ref=e675] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/express_send.html
+        - definition [ref=e676]:
+          - link "售后服务" [ref=e677] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/chang_item.html
+        - definition [ref=e678]:
+          - link "发票须知" [ref=e679] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/invoice.html
+        - definition [ref=e680]:
+          - link "品牌目录" [ref=e681] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/brand_catalogue.html
+        - definition [ref=e682]:
+          - link "商品目录" [ref=e683] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/product.html
+      - generic [ref=e685]:
+        - term [ref=e686]: 关于我们
+        - definition [ref=e687]:
+          - link "企业简介" [ref=e688] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/about_us.html
+        - definition [ref=e689]:
+          - link "企业文化" [ref=e690] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/enterprise_culture.html
+        - definition [ref=e691]:
+          - link "加入我们" [ref=e692] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/join_us.html
+        - definition [ref=e693]:
+          - link "联系我们" [ref=e694] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/contact_us.html
+      - generic [ref=e696]:
+        - term [ref=e697]: 特色服务
+        - definition [ref=e698]:
+          - link "选型手册" [ref=e699] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/datasheet.html
+        - definition [ref=e700]:
+          - link "期货订购" [ref=e701] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/futures_ordering.html
+        - definition [ref=e702]:
+          - link "海外代购" [ref=e703] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/overseas_list.html
+        - definition [ref=e704]:
+          - link "原厂直订" [ref=e705] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/dl_list.html
+      - generic [ref=e707]:
+        - term [ref=e708]: 政策声明
+        - definition [ref=e709]:
+          - link "隐私保护政策" [ref=e710] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/privacy.html
+        - definition [ref=e711]:
+          - link "网站免责声明" [ref=e712] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/disclaimer.html
+        - definition [ref=e713]:
+          - link "注册用户协议" [ref=e714] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/help/agreement.html
+        - definition [ref=e715]:
+          - link "特别申明" [ref=e716] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/info/4276.html
+    - generic [ref=e717]:
+      - paragraph [ref=e718]:
+        - img [ref=e719]
+      - paragraph [ref=e720]: 关注公众号，优惠活动早知道！
+    - generic [ref=e721]:
+      - heading "4000-306-326" [level=2] [ref=e722]
+      - paragraph [ref=e723]: 周一至周五（9:00-18:30） 采购热线
+      - link "人工服务" [ref=e724] [cursor=pointer]:
+        - /url: https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true
+    - generic [ref=e725]:
+      - generic [ref=e726]: 友情链接：
+      - list [ref=e727]:
+        - listitem [ref=e728]:
+          - link "电子元器件网" [ref=e729] [cursor=pointer]:
+            - /url: http://dianzi.huangye88.com
+        - listitem [ref=e730]:
+          - link "万通商务网" [ref=e731] [cursor=pointer]:
+            - /url: http://www.u520.net/
+        - listitem [ref=e732]:
+          - link "Marking丝印查询" [ref=e733] [cursor=pointer]:
+            - /url: http://www.838dz.com/
+        - listitem [ref=e734]:
+          - link "电子工程网" [ref=e735] [cursor=pointer]:
+            - /url: http://www.eechina.com/
+        - listitem [ref=e736]:
+          - link "拍明芯城元器件商城" [ref=e737] [cursor=pointer]:
+            - /url: https://www.iczoom.com/
+        - listitem [ref=e738]:
+          - link "烜芯微二极管" [ref=e739] [cursor=pointer]:
+            - /url: http://www.ejiguan.cn/
+        - listitem [ref=e740]:
+          - link "芯片商城" [ref=e741] [cursor=pointer]:
+            - /url: https://www.jdchips.com/
+        - listitem [ref=e742]:
+          - link "深圳市电子商会" [ref=e743] [cursor=pointer]:
+            - /url: https://www.seccw.com/
+        - listitem [ref=e744]:
+          - link "电子元器件索引" [ref=e745] [cursor=pointer]:
+            - /url: https://www.wlxmall.com/mappro/a
+        - listitem [ref=e746]:
+          - link "青岛仪器仪表" [ref=e747] [cursor=pointer]:
+            - /url: http://www.3017.cn/
+        - listitem [ref=e748]:
+          - link "全球半导体观察" [ref=e749] [cursor=pointer]:
+            - /url: https://www.dramx.com/
+        - listitem [ref=e750]:
+          - link "机电设备采购网" [ref=e751] [cursor=pointer]:
+            - /url: https://www.chinamae.com
+    - generic [ref=e752]:
+      - paragraph [ref=e753]:
+        - text: Copyright ©2023 wlxmall.com万联芯城版权所有 | 电信与信息服务业务经营许可证100798号 |
+        - link "粤ICP备14012234号" [ref=e754] [cursor=pointer]:
+          - /url: https://beian.miit.gov.cn/#/Integrated/index
+        - text: "|"
+        - link "投诉建议" [ref=e755] [cursor=pointer]:
+          - /url: javascript:;
+      - paragraph [ref=e756]: 客服电话：4000-306-326 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心
+      - paragraph [ref=e757]:
+        - link "粤公网安备 44030402002882号" [ref=e758] [cursor=pointer]:
+          - /url: https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030402002882
+      - link [ref=e760] [cursor=pointer]:
+        - /url: http://tongji.baidu.com/hm-web/welcome/ico?s=20ec396977392eba8ff19b4ce1c38c43
+        - img [ref=e761]
+  - list [ref=e762]:
+    - listitem [ref=e763]:
+      - link "在线客服" [ref=e764] [cursor=pointer]:
+        - /url: https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true
+        - text: 在线客服
+    - listitem [ref=e765]:
+      - link "微信" [ref=e766] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=e767]:
+      - link "购物车" [ref=e768] [cursor=pointer]:
+        - /url: https://www.wlxmall.com/shopping_cart
+    - listitem [ref=e769]:
+      - link "公众号" [ref=e770] [cursor=pointer]:
+        - /url: "#"
+    - listitem [ref=e771]:
+      - link "投诉建议" [ref=e772] [cursor=pointer]:
+        - /url: javascript:;
+      - paragraph
