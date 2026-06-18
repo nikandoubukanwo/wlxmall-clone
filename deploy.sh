@@ -1,18 +1,18 @@
 #!/bin/bash
 # ============================================
-# 万联芯城 - 自动部署脚本
-# 在服务器上运行: bash /opt/wlxmall/backend/deploy.sh
+# longkitech - 自动部署脚本
+# 在服务器上运行: bash /opt/longkitech/backend/deploy.sh
 # ============================================
 set -e
 
-BACKEND_DIR="/opt/wlxmall/backend"
-FRONTEND_SRC_DIR="/opt/wlxmall/frontend"
-FRONTEND_DIST_DIR="/var/www/wlxmall"
-SERVICE_NAME="wlxmall-api"
+BACKEND_DIR="/opt/longkitech/backend"
+FRONTEND_SRC_DIR="/opt/longkitech/frontend"
+FRONTEND_DIST_DIR="/var/www/longkitech"
+SERVICE_NAME="longkitech-api"
 BRANCH="master"
 
 echo "========================================="
-echo "  万联芯城部署脚本"
+echo "  longkitech 部署脚本"
 echo "  时间: $(date '+%Y-%m-%d %H:%M:%S')"
 echo "========================================="
 
@@ -28,7 +28,7 @@ if [ -d "$BACKEND_DIR/.git" ]; then
 else
     echo "  ⚠️ 未检测到 Git 仓库，跳过拉取"
     echo "  请先在服务器配置 Git："
-    echo "    cd /opt/wlxmall"
+    echo "    cd /opt/longkitech"
     echo "    git init"
     echo "    git remote add origin <你的GitHub仓库URL>"
     echo "    git pull origin $BRANCH"

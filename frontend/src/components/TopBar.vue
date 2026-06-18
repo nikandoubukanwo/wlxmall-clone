@@ -21,12 +21,12 @@
         <span class="separator">|</span>
         <span class="contact-info">
           <el-icon><Phone /></el-icon>
-          4000-306-326
+          0755-83233897
         </span>
         <span class="separator">|</span>
         <a class="topbar-link qq-link" href="https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true" target="_blank">
           <el-icon><ChatDotSquare /></el-icon>
-          4000306326
+          0755-83233897
         </a>
       </div>
     </div>

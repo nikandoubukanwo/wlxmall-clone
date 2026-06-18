@@ -2,8 +2,8 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "sqlite+aiosqlite:///./wlxmall.db"
-    SECRET_KEY: str = "wlxmall-secret-key-change-in-production"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./longkitech.db"
+    SECRET_KEY: str = "longkitech-secret-key-change-in-production"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
 

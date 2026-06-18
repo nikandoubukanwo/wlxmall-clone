@@ -9,7 +9,7 @@
         <div class="carousel-track" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
           <div class="carousel-slide slide-1">
             <div class="slide-content">
-              <div class="slide-brand">万联芯城</div>
+              <div class="slide-brand">隆祺电子</div>
               <div class="slide-tagline">电子元器件采购网</div>
               <div class="slide-desc">原装正品 · 极速发货 · 一站式采购</div>
               <button class="slide-btn">立即选购</button>
@@ -55,7 +55,7 @@
               <ellipse cx="20" cy="30" rx="12" ry="10" fill="#bdbdbd"/>
             </svg>
           </div>
-          <div class="welcome-text">HI~欢迎访问万联芯城</div>
+          <div class="welcome-text">HI~欢迎访问隆祺电子</div>
           <div class="welcome-actions">
             <button class="action-btn login-btn">登录</button>
             <button class="action-btn register-btn">免费注册</button>
@@ -65,7 +65,7 @@
         <!-- 万联快报 section -->
         <div class="sidebar-news">
           <div class="news-header">
-            <span class="news-title">万联快报</span>
+            <span class="news-title">隆祺快报</span>
             <a href="#" class="news-more">更多 &gt;</a>
           </div>
           <ul class="news-list">

@@ -1,6 +1,6 @@
 <template>
   <div class="why-section section-gray">
-    <div class="section-title">为什么选择万联芯城</div>
+    <div class="section-title">为什么选择隆祺电子</div>
     <p class="section-subtitle">11年专注电子元器件供应链服务</p>
     <div class="cards-container">
       <div class="why-card" v-for="(card, i) in cards" :key="i">

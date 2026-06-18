@@ -18,7 +18,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="万联芯城 API",
+    title="隆祺电子 API",
     description="电子元器件电商平台后端 API",
     version="1.0.0",
     lifespan=lifespan,
@@ -43,7 +43,7 @@ app.include_router(brands.router)
 @app.get("/")
 async def root():
     return {
-        "name": "万联芯城 API",
+        "name": "隆祺电子 API",
         "version": "1.0.0",
         "docs": "/docs",
     }

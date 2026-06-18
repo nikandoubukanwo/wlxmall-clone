@@ -103,8 +103,8 @@ async def seed():
                  category="行业资讯",
                  content="DRAM（动态随机存取存储器）是计算机系统中最重要的存储器之一...",
                  view_count=1990),
-            News(title="万联芯城2026年劳动节放假通知",
-                 summary="万联芯城2026年劳动节放假安排通知。",
+            News(title="隆祺电子2026年劳动节放假通知",
+                 summary="隆祺电子2026年劳动节放假安排通知。",
                  category="公司动态",
                  content="尊敬的客户：根据国家法定节假日规定...",
                  view_count=102),
@@ -115,9 +115,9 @@ async def seed():
         demo_user = User(
             username="demo",
             password=pwd_context.hash("demo123"),
-            email="demo@wlxmall.com",
-            phone="4000-306-326",
-            company="万联芯城",
+            email="demo@longkitech.com",
+            phone="0755-83233897",
+            company="隆祺电子",
         )
         session.add(demo_user)
 

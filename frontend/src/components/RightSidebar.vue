@@ -23,7 +23,7 @@ const showBackTop = ref(false)
 
 const menuItems = [
   { icon: 'ChatDotRound', label: '在线客服', action: () => window.open('https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true') },
-  { icon: 'ChatLineSquare', label: '微信', action: () => alert('微信号: wlxmall') },
+  { icon: 'ChatLineSquare', label: '微信', action: () => alert('微信号: longkitech') },
   { icon: 'ShoppingCart', label: '购物车', action: () => alert('购物车功能') },
   { icon: 'Message', label: '公众号', action: () => alert('关注公众号') },
   { icon: 'EditPen', label: '投诉建议', action: () => alert('投诉建议功能') },

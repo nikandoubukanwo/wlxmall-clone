@@ -17,7 +17,7 @@
             <p class="qr-text">关注公众号，优惠活动早知道！</p>
           </div>
           <div class="hotline-section">
-            <div class="hotline-title">4000-306-326</div>
+            <div class="hotline-title">0755-83233897</div>
             <p class="hotline-desc">周一至周五（9:00-18:30）采购热线</p>
             <a class="hotline-btn" href="https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true" target="_blank">
               <el-icon><ChatDotRound /></el-icon>
@@ -39,8 +39,8 @@
     <!-- Bottom: Copyright -->
     <div class="footer-bottom">
       <div class="footer-inner">
-        <p>Copyright ©2023 wlxmall.com万联芯城版权所有 | 电信与信息服务业务经营许可证100798号 | 粤ICP备14012234号 | 投诉建议</p>
-        <p>客服电话：4000-306-326 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心</p>
+        <p>Copyright ©2023 longkitech.com 版权所有 | 电信与信息服务业务经营许可证100798号 | 粤ICP备14012234号 | 投诉建议</p>
+        <p>客服电话：0755-83233897 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心</p>
         <p>粤公网安备 44030402002882号</p>
       </div>
     </div>

@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="logo-area">
         <router-link to="/">
-          <div class="logo">万联芯城</div>
+          <div class="logo">隆祺电子</div>
           <div class="logo-tag">电子元器件采购网</div>
         </router-link>
       </div>
