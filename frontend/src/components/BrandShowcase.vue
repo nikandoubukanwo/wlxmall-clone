@@ -1,26 +1,24 @@
 <template>
   <div class="brand-section section-white">
     <div class="section-title">知名品牌</div>
-    <p class="section-subtitle">400+全球知名品牌，原厂渠道正品保障</p>
+    <p class="section-subtitle">29+全球知名品牌，原厂渠道正品保障</p>
     <div class="brand-container">
-      <div class="brand-tabs">
-        <span
-          :class="['tab-item', { active: activeTab === 'global' }]"
-          @click="activeTab = 'global'"
-        >知名品牌</span>
-        <span
-          :class="['tab-item', { active: activeTab === 'domestic' }]"
-          @click="activeTab = 'domestic'"
-        >国产器件</span>
-      </div>
       <div class="brand-grid">
         <div
           class="brand-cell"
-          v-for="(brand, i) in (activeTab === 'global' ? globalBrands : domesticBrands)"
+          v-for="(brand, i) in globalBrands"
           :key="i"
           @click="handleBrandClick(brand)"
+          :title="brand.full"
         >
-          <div class="brand-logo">{{ brand.name }}</div>
+          <img
+            v-if="brand.image"
+            class="brand-logo-img"
+            :src="brand.image"
+            :alt="brand.name"
+            loading="lazy"
+          />
+          <div v-else class="brand-logo-text">{{ brand.name }}</div>
         </div>
       </div>
     </div>
@@ -28,54 +26,44 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
-const activeTab = ref('global')
+const router = useRouter()
 
 const globalBrands = [
-  { name: 'TI', full: 'Texas Instruments' },
-  { name: 'ADI', full: 'Analog Devices' },
-  { name: 'ST', full: 'STMicroelectronics' },
-  { name: 'NXP', full: 'NXP Semiconductors' },
-  { name: 'ON', full: 'ON Semiconductor' },
-  { name: 'Microchip', full: 'Microchip Technology' },
-  { name: 'Infineon', full: 'Infineon Technologies' },
-  { name: 'Renesas', full: 'Renesas Electronics' },
-  { name: 'Samsung', full: 'Samsung Electro-Mechanics' },
-  { name: 'Murata', full: 'Murata Manufacturing' },
-  { name: 'Yageo', full: 'Yageo Corporation' },
-  { name: 'TE', full: 'TE Connectivity' },
-  { name: 'Molex', full: 'Molex' },
-  { name: 'Xilinx', full: 'Xilinx (AMD)' },
-  { name: 'Altera', full: 'Altera (Intel)' },
-  { name: 'Vishay', full: 'Vishay Intertechnology' },
-  { name: 'Diodes', full: 'Diodes Incorporated' },
-  { name: 'Maxim', full: 'Maxim Integrated' },
-]
-
-const domesticBrands = [
-  { name: '兆易创新', full: 'GigaDevice' },
-  { name: '紫光展锐', full: 'Unisoc' },
-  { name: '全志科技', full: 'Allwinner' },
-  { name: '芯朋微', full: 'ChipON' },
-  { name: '国民技术', full: 'Nations Technologies' },
-  { name: '上海贝岭', full: 'Belling' },
-  { name: '华大半导体', full: 'HDSC' },
-  { name: '中科蓝讯', full: 'Bluetrum' },
-  { name: '博通集成', full: 'Beken' },
-  { name: '乐鑫科技', full: 'Espressif' },
-  { name: '汇顶科技', full: 'Goodix' },
-  { name: '圣邦微', full: 'SG Micro' },
-  { name: '思瑞浦', full: '3PEAK' },
-  { name: '纳芯微', full: 'NOVOSENSE' },
-  { name: '晶晨股份', full: 'Amlogic' },
-  { name: '北京君正', full: 'Ingenic' },
-  { name: '复旦微电', full: 'Fudan Micro' },
-  { name: '比亚迪半导体', full: 'BYD Semi' },
+  { name: 'NVIDIA', full: 'NVIDIA', image: '/brands/nvidia.jpg' },
+  { name: 'LINEAR', full: 'Linear Technology', image: '/brands/linear.png' },
+  { name: 'Renesas', full: 'Renesas Electronics', image: '/brands/renesas.png' },
+  { name: 'Freescale', full: 'Freescale Semiconductor', image: '/brands/freescale.png' },
+  { name: 'Broadcom', full: 'Broadcom Inc.', image: '/brands/broadcom.png' },
+  { name: 'Vishay', full: 'Vishay Intertechnology', image: '/brands/vishay.jpg' },
+  { name: 'EXAR', full: 'EXAR Corporation', image: '/brands/exar.jpg' },
+  { name: 'Diodes', full: 'Diodes Incorporated', image: '/brands/diodes.jpg' },
+  { name: 'Avago', full: 'Avago Technologies', image: '/brands/avago.jpg' },
+  { name: 'Atmel', full: 'Atmel Corporation', image: '/brands/atmel.jpg' },
+  { name: 'Actel', full: 'Actel Corporation', image: '/brands/actel.jpg' },
+  { name: 'Lattice', full: 'Lattice Semiconductor', image: '/brands/lattice.jpg' },
+  { name: 'ADI', full: 'Analog Devices', image: '/brands/adi.jpg' },
+  { name: 'TI', full: 'Texas Instruments', image: '/brands/ti.jpg' },
+  { name: 'Maxim', full: 'Maxim Integrated', image: '/brands/maxim.jpg' },
+  { name: 'SK Hynix', full: 'SK Hynix Inc.', image: '/brands/sk-hynix.jpg' },
+  { name: 'Marvell', full: 'Marvell Technology', image: '/brands/marvell.jpg' },
+  { name: 'Infineon', full: 'Infineon Technologies', image: '/brands/infineon.jpg' },
+  { name: 'Toshiba', full: 'Toshiba Corporation', image: '/brands/toshiba.jpg' },
+  { name: 'IOR', full: 'International Rectifier', image: '/brands/ior.jpg' },
+  { name: 'ST', full: 'STMicroelectronics', image: '/brands/st.jpg' },
+  { name: 'ON', full: 'ON Semiconductor', image: '/brands/on.jpg' },
+  { name: 'NXP', full: 'NXP Semiconductors', image: '/brands/nxp.jpg' },
+  { name: 'ISSI', full: 'Integrated Silicon Solution', image: '/brands/issi.jpg' },
+  { name: 'Micron', full: 'Micron Technology', image: '/brands/micron.png' },
+  { name: 'Xilinx', full: 'Xilinx (AMD)', image: '/brands/xilinx.jpg' },
+  { name: 'Altera', full: 'Altera (Intel)', image: '/brands/altera.jpg' },
+  { name: 'Samsung', full: 'Samsung Electronics', image: '/brands/samsung.jpg' },
+  { name: 'Intel', full: 'Intel Corporation', image: '/brands/intel.jpg' },
 ]
 
 function handleBrandClick(brand) {
-  alert(`查看${brand.name}(${brand.full})产品`)
+  router.push({ path: '/search', query: { brand: brand.name } })
 }
 </script>
 
@@ -88,31 +76,6 @@ function handleBrandClick(brand) {
   margin: 0 auto;
   padding: 0 15px;
 }
-.brand-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 4px;
-  margin-bottom: 24px;
-}
-.tab-item {
-  padding: 8px 32px;
-  font-size: 15px;
-  cursor: pointer;
-  border: 1px solid var(--color-gray-6);
-  border-radius: 4px;
-  color: var(--color-gray-2);
-  transition: all var(--transition-fast);
-}
-.tab-item.active {
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
-}
-.tab-item:hover:not(.active) {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-}
-
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -122,17 +85,27 @@ function handleBrandClick(brand) {
   background: var(--color-white);
   border: 1px solid var(--color-gray-7);
   border-radius: 6px;
-  padding: 16px 8px;
+  padding: 12px 8px;
   text-align: center;
   cursor: pointer;
   transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
 }
 .brand-cell:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
   border-color: var(--color-primary);
 }
-.brand-logo {
+.brand-logo-img {
+  max-width: 100%;
+  max-height: 48px;
+  object-fit: contain;
+  display: block;
+}
+.brand-logo-text {
   font-size: 13px;
   font-weight: 600;
   color: var(--color-dark);

@@ -1,24 +1,7 @@
 <template>
   <div class="topbar">
     <div class="topbar-inner">
-      <div class="topbar-left">
-        <template v-if="!userStore.isLoggedIn">
-          <span class="welcome">您好，</span>
-          <a class="topbar-link" href="javascript:;" @click="handleLogin">请登录</a>
-          <span class="separator">|</span>
-          <a class="topbar-link" href="javascript:;" @click="handleRegister">免费注册</a>
-        </template>
-        <template v-else>
-          <span class="welcome">您好，</span>
-          <span class="username">{{ userStore.userInfo?.username || '用户' }}</span>
-          <a class="topbar-link" href="javascript:;" @click="handleLogout">退出</a>
-        </template>
-      </div>
       <div class="topbar-right">
-        <a class="topbar-link" href="javascript:;">我的订单</a>
-        <span class="separator">|</span>
-        <a class="topbar-link" href="javascript:;">会员中心</a>
-        <span class="separator">|</span>
         <span class="contact-info">
           <el-icon><Phone /></el-icon>
           0755-83233897
@@ -34,21 +17,6 @@
 </template>
 
 <script setup>
-import { useUserStore } from '@/store'
-
-const userStore = useUserStore()
-
-function handleLogin() {
-  alert('登录功能开发中')
-}
-
-function handleRegister() {
-  alert('注册功能开发中')
-}
-
-function handleLogout() {
-  userStore.logout()
-}
 </script>
 
 <style scoped>

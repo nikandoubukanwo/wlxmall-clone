@@ -1,40 +1,23 @@
 <template>
   <div class="find-parts-section section-gray">
     <div class="find-parts-container">
-      <!-- Left: Find Parts Form -->
+      <!-- Left: Search Form -->
       <div class="find-form-panel">
-        <div class="form-title">我要找料</div>
+        <div class="form-title">型号搜索</div>
         <div class="form-body">
           <div class="form-row">
-            <label class="form-label required">型号</label>
-            <input v-model="form.model" class="input" placeholder="请输入型号" />
-          </div>
-          <div class="form-row">
-            <label class="form-label required">数量</label>
-            <div class="form-input-group">
-              <input v-model="form.qty" class="input" placeholder="请输入数量" />
-              <select v-model="form.unit" class="form-select">
-                <option value="pcs">pcs</option>
-                <option value="个">个</option>
-              </select>
-            </div>
+            <label class="form-label">型号</label>
+            <input v-model="keyword" class="input" placeholder="请输入型号" @keyup.enter="handleSearch" />
           </div>
           <div class="form-row">
             <label class="form-label">品牌</label>
-            <input v-model="form.brand" class="input" placeholder="品牌（选填）" />
+            <input v-model="brand" class="input" placeholder="品牌（选填）" @keyup.enter="handleSearch" />
           </div>
           <div class="form-row">
-            <label class="form-label">目标单价</label>
-            <div class="price-input">
-              <span class="price-prefix">¥</span>
-              <input v-model="form.price" class="input" placeholder="目标单价" />
-            </div>
+            <label class="form-label">封装</label>
+            <input v-model="pkg" class="input" placeholder="封装（选填）" @keyup.enter="handleSearch" />
           </div>
-          <div class="form-row">
-            <label class="form-label">备注</label>
-            <input v-model="form.remark" class="input" placeholder="备注（选填）" />
-          </div>
-          <button class="submit-btn" @click="handleSubmit">提交</button>
+          <button class="submit-btn" @click="handleSearch">搜索</button>
         </div>
       </div>
 
@@ -45,23 +28,29 @@
           <table class="table">
             <thead>
               <tr>
-                <th>商品名称</th>
+                <th>排名</th>
                 <th>商品型号</th>
                 <th>品牌</th>
-                <th>价格</th>
-                <th>库存</th>
+                <th>封装</th>
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(item, i) in hotProducts" :key="i">
-                <td>{{ item.category }}</td>
-                <td><a class="link" href="javascript:;" @click="viewDetail(item)">{{ item.model }}</a></td>
+              <tr v-for="(item, i) in hotProducts" :key="item.id">
+                <td class="rank-cell">{{ (hotPage - 1) * hotPageSize + i + 1 }}</td>
+                <td>
+                  <a class="link" href="javascript:;" @click="searchByModel(item.model)">{{ item.model }}</a>
+                </td>
                 <td>{{ item.brand }}</td>
-                <td>{{ item.price }}</td>
-                <td>{{ item.stock }}</td>
+                <td>{{ item.pkg }}</td>
               </tr>
             </tbody>
           </table>
+        </div>
+        <!-- Hot products pagination -->
+        <div class="hot-pagination" v-if="hotTotal > hotPageSize">
+          <button class="page-btn" :disabled="hotPage <= 1" @click="loadHot(hotPage - 1)">‹</button>
+          <span class="page-info">{{ hotPage }} / {{ hotTotalPages }}</span>
+          <button class="page-btn" :disabled="hotPage >= hotTotalPages" @click="loadHot(hotPage + 1)">›</button>
         </div>
       </div>
     </div>
@@ -69,45 +58,49 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+import { productAPI } from '@/api/index.js'
 
-const form = reactive({
-  model: '',
-  qty: '',
-  unit: 'pcs',
-  brand: '',
-  price: '',
-  remark: '',
-})
+const router = useRouter()
 
-const hotProducts = [
-  { category: 'IGBT管/模块', model: 'FGW75XS120C', brand: 'FUJI(富士电机)', price: '¥16.90500', stock: '7200个' },
-  { category: 'IGBT管/模块', model: 'FGW50XS65C', brand: 'FUJI(富士电机)', price: '¥8.19950', stock: '12000个' },
-  { category: 'IGBT管/模块', model: 'FGW75XS65D', brand: 'FUJI(富士电机)', price: '¥13.83450', stock: '1200个' },
-  { category: 'IGBT管/模块', model: 'FGW75XS65C', brand: 'FUJI(富士电机)', price: '¥10.60300', stock: '4800个' },
-  { category: 'IGBT管/模块', model: 'FGW40XS120C', brand: 'FUJI(富士电机)', price: '¥10.15450', stock: '2400个' },
-  { category: 'IGBT管/模块', model: 'FGW40N120HD', brand: 'FUJI(富士电机)', price: '¥19.09000', stock: '4800个' },
-  { category: 'IGBT管/模块', model: 'FGZ75XS120C', brand: 'FUJI(富士电机)', price: '¥27.48500', stock: '200个' },
-  { category: 'IGBT管/模块', model: '2MBI600VN-120-50', brand: 'FUJI(富士电机)', price: '¥603.75000', stock: '78个' },
-  { category: 'IGBT管/模块', model: 'FGW40N120WD', brand: 'FUJI(富士电机)', price: '¥14.03000', stock: '4800个' },
-  { category: '场效应管(MOSFET)', model: 'FMW60N027S2FDHF', brand: 'FUJI(富士电机)', price: '¥34.76450', stock: '1800个' },
-]
+// Search form state
+const keyword = ref('')
+const brand = ref('')
+const pkg = ref('')
 
-function handleSubmit() {
-  if (!form.model) {
-    alert('请输入型号')
-    return
+// Hot products state
+const hotProducts = ref([])
+const hotPage = ref(1)
+const hotTotal = ref(0)
+const hotPageSize = 10
+
+const hotTotalPages = computed(() => Math.max(1, Math.ceil(hotTotal.value / hotPageSize)))
+
+async function loadHot(page = 1) {
+  try {
+    const res = await productAPI.hotList({ page, page_size: hotPageSize })
+    hotProducts.value = res.items || []
+    hotTotal.value = res.total || 0
+    hotPage.value = page
+  } catch (e) {
+    console.error('Failed to load hot products:', e)
   }
-  if (!form.qty) {
-    alert('请输入数量')
-    return
-  }
-  alert(`询价提交成功！型号: ${form.model}, 数量: ${form.qty}${form.unit}`)
 }
 
-function viewDetail(item) {
-  alert(`查看详情: ${item.model}`)
+function handleSearch() {
+  const query = {}
+  if (keyword.value) query.keyword = keyword.value.trim()
+  if (brand.value) query.brand = brand.value.trim()
+  if (pkg.value) query.pkg = pkg.value.trim()
+  router.push({ path: '/search', query })
 }
+
+function searchByModel(model) {
+  router.push({ path: '/search', query: { keyword: model } })
+}
+
+onMounted(() => loadHot(1))
 </script>
 
 <style scoped>
@@ -151,11 +144,6 @@ function viewDetail(item) {
   color: var(--color-gray-2);
   margin-bottom: 5px;
   font-weight: 500;
-}
-.form-label.required::before {
-  content: '*';
-  color: var(--color-primary);
-  margin-right: 2px;
 }
 .form-input-group {
   display: flex;
@@ -238,5 +226,45 @@ function viewDetail(item) {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+.rank-cell {
+  color: var(--color-gray-4);
+  font-size: 12px;
+}
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.hot-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.page-btn {
+  padding: 4px 12px;
+  border: 1px solid var(--color-gray-6);
+  border-radius: 4px;
+  background: var(--color-white);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-gray-2);
+}
+.page-btn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.page-info {
+  font-size: 13px;
+  color: var(--color-gray-4);
 }
 </style>

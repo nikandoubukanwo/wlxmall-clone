@@ -28,18 +28,10 @@
 
       <!-- Nav Links -->
       <div class="nav-links">
-        <router-link to="/" class="nav-link active">首页</router-link>
-        <a class="nav-link" href="javascript:;">品牌目录</a>
-        <a class="nav-link hot" href="javascript:;">
-          可议价
-          <span class="nav-badge">HOT</span>
-        </a>
-        <a class="nav-link" href="javascript:;">超级爆款</a>
-        <a class="nav-link" href="javascript:;">热门现货</a>
-        <a class="nav-link" href="javascript:;">期货订购</a>
-        <a class="nav-link" href="javascript:;">领券中心</a>
-        <a class="nav-link" href="javascript:;">海外代购</a>
-        <a class="nav-link" href="javascript:;">代理品牌</a>
+        <router-link to="/" class="nav-link">首页</router-link>
+        <a class="nav-link" href="javascript:;">公司简介</a>
+        <a class="nav-link" href="javascript:;">IC库存</a>
+        <a class="nav-link" href="javascript:;">联系我们</a>
       </div>
     </div>
   </div>

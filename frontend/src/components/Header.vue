@@ -27,27 +27,6 @@
             搜索
           </button>
         </div>
-        <div class="hot-searches">
-          <span class="hot-label">热搜：</span>
-          <a class="hot-item" href="javascript:;">TI、ADI、ST热门现货</a>
-          <a class="hot-item" href="javascript:;">三星电容现货</a>
-          <a class="hot-item" href="javascript:;">村田电容现货</a>
-          <a class="hot-item" href="javascript:;">国巨电容现货</a>
-        </div>
-      </div>
-
-      <!-- Cart & Inquiry -->
-      <div class="action-area">
-        <div class="action-item cart" @click="goCart">
-          <el-icon size="24"><ShoppingCart /></el-icon>
-          <span class="badge">{{ cartStore.count }}</span>
-          <span class="action-text">我的购物车</span>
-        </div>
-        <div class="action-item inquiry" @click="goInquiry">
-          <el-icon size="24"><Document /></el-icon>
-          <span class="badge">{{ inquiryStore.count }}</span>
-          <span class="action-text">询价订货单</span>
-        </div>
       </div>
     </div>
   </div>
@@ -55,24 +34,15 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useCartStore, useInquiryStore } from '@/store'
+import { useRouter } from 'vue-router'
 
-const cartStore = useCartStore()
-const inquiryStore = useInquiryStore()
+const router = useRouter()
 const keyword = ref('')
 
 function handleSearch() {
   if (keyword.value.trim()) {
-    alert(`搜索: ${keyword.value}`)
+    router.push({ path: '/search', query: { keyword: keyword.value.trim() } })
   }
-}
-
-function goCart() {
-  alert('购物车功能开发中')
-}
-
-function goInquiry() {
-  alert('询价单功能开发中')
 }
 </script>
 
@@ -160,64 +130,4 @@ function goInquiry() {
   background: var(--color-primary-hover);
 }
 
-.hot-searches {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12px;
-}
-.hot-label {
-  color: var(--color-gray-4);
-}
-.hot-item {
-  color: var(--color-gray-2);
-  cursor: pointer;
-  transition: color var(--transition-fast);
-}
-.hot-item:hover {
-  color: var(--color-primary);
-}
-
-/* Actions */
-.action-area {
-  display: flex;
-  gap: 20px;
-  flex-shrink: 0;
-}
-.action-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  padding: 4px 10px;
-  border-radius: 4px;
-  transition: background var(--transition-fast);
-}
-.action-item:hover {
-  background: var(--color-gray-9);
-}
-.badge {
-  position: absolute;
-  top: -2px;
-  right: 2px;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
-  background: var(--color-primary);
-  color: var(--color-white);
-  font-size: 11px;
-  border-radius: 9px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-.action-text {
-  font-size: 12px;
-  color: var(--color-gray-2);
-  margin-top: 2px;
-  white-space: nowrap;
-}
 </style>
