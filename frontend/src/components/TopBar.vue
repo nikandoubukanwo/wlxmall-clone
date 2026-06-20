@@ -1,22 +1,46 @@
 <template>
   <div class="topbar">
     <div class="topbar-inner">
-      <div class="topbar-right">
+      <div class="topbar-left">
         <span class="contact-info">
           <el-icon><Phone /></el-icon>
-          0755-83233897
+          {{ $t('topbar.phone') }}
         </span>
-        <span class="separator">|</span>
-        <a class="topbar-link qq-link" href="https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true" target="_blank">
-          <el-icon><ChatDotSquare /></el-icon>
-          0755-83233897
-        </a>
+      </div>
+      <div class="topbar-right">
+        <div class="lang-switcher">
+          <span
+            class="lang-option"
+            :class="{ active: currentLang === 'zh' }"
+            @click="switchLang('zh')"
+          >{{ $t('language.zh') }}</span>
+          <span class="lang-sep">/</span>
+          <span
+            class="lang-option"
+            :class="{ active: currentLang === 'en' }"
+            @click="switchLang('en')"
+          >{{ $t('language.en') }}</span>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+import en from 'element-plus/dist/locale/en.mjs'
+
+const { locale } = useI18n()
+const currentLang = ref(localStorage.getItem('lang') || 'zh')
+
+function switchLang(lang) {
+  currentLang.value = lang
+  locale.value = lang
+  localStorage.setItem('lang', lang)
+  window.location.reload()
+}
 </script>
 
 <style scoped>
@@ -72,5 +96,27 @@
   display: inline-flex;
   align-items: center;
   gap: 3px;
+}
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 2px;
+}
+.lang-option {
+  color: var(--color-gray-4);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  font-size: 12px;
+}
+.lang-option:hover {
+  color: var(--color-primary-light);
+}
+.lang-option.active {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+.lang-sep {
+  color: var(--color-gray-1);
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="brand-section section-white">
-    <div class="section-title">知名品牌</div>
-    <p class="section-subtitle">29+全球知名品牌，原厂渠道正品保障</p>
+    <div class="section-title">{{ $t('home.brandTitle') }}</div>
+    <p class="section-subtitle">{{ $t('home.brandSubtitle') }}</p>
     <div class="brand-container">
       <div class="brand-grid">
         <div

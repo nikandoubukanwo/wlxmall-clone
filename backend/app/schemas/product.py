@@ -16,6 +16,7 @@ class ProductBase(BaseModel):
     name: str
     model: str
     brand: str
+    pkg: Optional[str] = None
     price: float = 0
     stock: int = 0
     category: Optional[str] = None

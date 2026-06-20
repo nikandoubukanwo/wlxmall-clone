@@ -21,7 +21,7 @@ async def get_hot_products(
     stmt = (
         select(Product)
         .where(Product.is_hot == True)
-        .order_by(Product.created_at.desc())
+        .order_by(Product.id.asc())
         .offset((page - 1) * page_size)
         .limit(page_size)
     )
@@ -44,7 +44,7 @@ async def get_hot_products(
 async def search_products(
     keyword: Optional[str] = Query(None),
     brand: Optional[str] = Query(None),
-    category: Optional[str] = Query(None),
+    pkg: Optional[str] = Query(None),
     page: int = Query(1, ge=1),
     page_size: int = Query(20, ge=1, le=100),
     db: AsyncSession = Depends(get_db),
@@ -54,13 +54,15 @@ async def search_products(
         stmt = stmt.where(
             Product.name.ilike(f"%{keyword}%")
             | Product.model.ilike(f"%{keyword}%")
+            | Product.brand.ilike(f"%{keyword}%")
+            | Product.description.ilike(f"%{keyword}%")
         )
     if brand:
         stmt = stmt.where(Product.brand.ilike(f"%{brand}%"))
-    if category:
-        stmt = stmt.where(Product.category == category)
+    if pkg:
+        stmt = stmt.where(Product.pkg.ilike(f"%{pkg}%"))
 
-    stmt = stmt.order_by(Product.created_at.desc())
+    stmt = stmt.order_by(Product.id.asc())
     count_stmt = stmt
     result = await db.execute(stmt.offset((page - 1) * page_size).limit(page_size))
     items = result.scalars().all()

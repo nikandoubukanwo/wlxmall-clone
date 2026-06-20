@@ -7,8 +7,11 @@
     <div class="search-header-bar">
       <div class="header-inner">
         <router-link to="/" class="search-logo">
-          <div class="logo">隆祺电子</div>
-          <div class="logo-tag">电子元器件采购网</div>
+          <img class="logo-img" src="/logo.png" alt="隆祺科技" />
+          <div>
+            <div class="logo">隆祺科技</div>
+            <div class="logo-tag">Longkitech</div>
+          </div>
         </router-link>
         <div class="search-box-area">
           <div class="search-box">
@@ -16,12 +19,12 @@
               v-model="searchKeyword"
               class="search-input"
               type="text"
-              placeholder="请输入型号"
+              :placeholder="$t('search.placeholder')"
               @keyup.enter="doSearch"
             />
             <button class="search-btn" @click="doSearch">
               <el-icon><Search /></el-icon>
-              搜索
+              {{ $t('search.submit') }}
             </button>
           </div>
         </div>
@@ -33,29 +36,29 @@
       <div class="filter-bar">
         <div class="filter-row">
           <div class="filter-item">
-            <label class="filter-label">型号</label>
-            <input v-model="filterKeyword" class="filter-input" placeholder="输入型号" @keyup.enter="doSearch" />
+            <label class="filter-label">{{ $t('search.filterModel') }}</label>
+            <input v-model="filterKeyword" class="filter-input" :placeholder="$t('search.filterModelPlaceholder')" @keyup.enter="doSearch" />
           </div>
           <div class="filter-item">
-            <label class="filter-label">品牌</label>
-            <input v-model="filterBrand" class="filter-input" placeholder="输入品牌" @keyup.enter="doSearch" />
+            <label class="filter-label">{{ $t('search.filterBrand') }}</label>
+            <input v-model="filterBrand" class="filter-input" :placeholder="$t('search.filterBrandPlaceholder')" @keyup.enter="doSearch" />
           </div>
           <div class="filter-item">
-            <label class="filter-label">封装</label>
-            <input v-model="filterPkg" class="filter-input" placeholder="输入封装" @keyup.enter="doSearch" />
+            <label class="filter-label">{{ $t('search.filterPkg') }}</label>
+            <input v-model="filterPkg" class="filter-input" :placeholder="$t('search.filterPkgPlaceholder')" @keyup.enter="doSearch" />
           </div>
           <button class="filter-btn" @click="doSearch">
             <el-icon><Search /></el-icon>
-            搜索
+            {{ $t('search.submit') }}
           </button>
-          <button class="reset-btn" @click="resetFilters">重置</button>
+          <button class="reset-btn" @click="resetFilters">{{ $t('search.reset') }}</button>
         </div>
       </div>
 
       <!-- Result summary -->
       <div class="result-header">
         <div class="result-summary">
-          搜索结果 <span class="total-hint">共 {{ total }} 条记录</span>
+          {{ $t('search.resultLabel') }} <span class="total-hint">{{ $t('search.totalRecords', { count: total }) }}</span>
         </div>
       </div>
 
@@ -65,25 +68,25 @@
           :data="items"
           v-loading="loading"
           stripe
-          empty-text="未找到匹配的型号"
+          :empty-text="$t('search.emptyText')"
           style="width: 100%"
         >
-          <el-table-column label="序号" type="index" width="70" />
-          <el-table-column prop="model" label="商品型号" min-width="200">
+          <el-table-column :label="$t('search.index')" type="index" width="70" />
+          <el-table-column :label="$t('search.productModel')" prop="model" min-width="200">
             <template #default="{ row }">
               <a class="model-link" href="javascript:;" @click="searchByModel(row.model)">
                 {{ row.model }}
               </a>
             </template>
           </el-table-column>
-          <el-table-column prop="brand" label="品牌" min-width="180">
+          <el-table-column :label="$t('search.filterBrand')" prop="brand" min-width="180">
             <template #default="{ row }">
               <a class="brand-link" href="javascript:;" @click="searchByBrand(row.brand)">
                 {{ row.brand }}
               </a>
             </template>
           </el-table-column>
-          <el-table-column prop="pkg" label="封装" min-width="160" />
+          <el-table-column :label="$t('search.filterPkg')" prop="pkg" min-width="160" />
         </el-table>
       </div>
 
@@ -221,24 +224,32 @@ onMounted(syncFromRoute)
 .search-logo {
   flex-shrink: 0;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-img {
+  height: 66px;
+  width: auto;
 }
 .logo {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--color-primary);
-  line-height: 1.2;
+  line-height: 1.0;
 }
 .logo-tag {
-  font-size: 11px;
-  color: var(--color-gray-4);
-  margin-top: 1px;
+  font-weight: 500;
+  font-size: 24px; color: var(--color-primary);
+
+  margin-top: 2px;
 }
 .search-box-area {
   flex: 1;
 }
 .search-box {
   display: flex;
-  height: 40px;
+  height: 50px;
   max-width: 600px;
 }
 .search-input {

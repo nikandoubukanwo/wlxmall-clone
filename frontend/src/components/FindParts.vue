@@ -3,35 +3,35 @@
     <div class="find-parts-container">
       <!-- Left: Search Form -->
       <div class="find-form-panel">
-        <div class="form-title">型号搜索</div>
+        <div class="form-title">{{ $t('home.findParts.title') }}</div>
         <div class="form-body">
           <div class="form-row">
-            <label class="form-label">型号</label>
-            <input v-model="keyword" class="input" placeholder="请输入型号" @keyup.enter="handleSearch" />
+            <label class="form-label">{{ $t('home.findParts.model') }}</label>
+            <input v-model="keyword" class="input" :placeholder="$t('home.findParts.modelPlaceholder')" @keyup.enter="handleSearch" />
           </div>
           <div class="form-row">
-            <label class="form-label">品牌</label>
-            <input v-model="brand" class="input" placeholder="品牌（选填）" @keyup.enter="handleSearch" />
+            <label class="form-label">{{ $t('home.findParts.brand') }}</label>
+            <input v-model="brand" class="input" :placeholder="$t('home.findParts.brandPlaceholder')" @keyup.enter="handleSearch" />
           </div>
           <div class="form-row">
-            <label class="form-label">封装</label>
-            <input v-model="pkg" class="input" placeholder="封装（选填）" @keyup.enter="handleSearch" />
+            <label class="form-label">{{ $t('home.findParts.pkg') }}</label>
+            <input v-model="pkg" class="input" :placeholder="$t('home.findParts.pkgPlaceholder')" @keyup.enter="handleSearch" />
           </div>
-          <button class="submit-btn" @click="handleSearch">搜索</button>
+          <button class="submit-btn" @click="handleSearch">{{ $t('home.findParts.submit') }}</button>
         </div>
       </div>
 
       <!-- Right: Hot Products Table -->
       <div class="hot-products-panel">
-        <div class="hot-title">最新热卖型号</div>
+        <div class="hot-title">{{ $t('home.findParts.hotTitle') }}</div>
         <div class="table-wrapper">
           <table class="table">
             <thead>
               <tr>
-                <th>排名</th>
-                <th>商品型号</th>
-                <th>品牌</th>
-                <th>封装</th>
+                <th>{{ $t('home.findParts.rank') }}</th>
+                <th>{{ $t('home.findParts.productModel') }}</th>
+                <th>{{ $t('home.findParts.brand') }}</th>
+                <th>{{ $t('home.findParts.pkg') }}</th>
               </tr>
             </thead>
             <tbody>

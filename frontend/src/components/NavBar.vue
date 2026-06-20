@@ -29,9 +29,9 @@
       <!-- Nav Links -->
       <div class="nav-links">
         <router-link to="/" class="nav-link">首页</router-link>
-        <a class="nav-link" href="javascript:;">公司简介</a>
+        <router-link to="/about" class="nav-link">公司简介</router-link>
         <a class="nav-link" href="javascript:;">IC库存</a>
-        <a class="nav-link" href="javascript:;">联系我们</a>
+        <a class="nav-link" href="javascript:;" @click="goContact">联系我们</a>
       </div>
     </div>
   </div>
@@ -39,9 +39,15 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const showCategory = ref(false)
 const activeCat = ref('')
+
+function goContact() {
+  router.push('/about#contact')
+}
 
 const categories = [
   [

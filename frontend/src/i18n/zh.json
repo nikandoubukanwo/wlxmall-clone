@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "公司简介",
+    "stock": "IC库存",
+    "contact": "联系我们"
+  },
+  "topbar": {
+    "phone": "18823333285",
+    "qq": "18823333285"
+  },
+  "header": {
+    "company": "隆祺科技",
+    "brand": "Longkitech",
+    "subtitle": "电子元器件采购网"
+  },
+  "home": {
+    "brandTitle": "知名品牌",
+    "brandSubtitle": "29+全球知名品牌，原厂渠道正品保障",
+    "findParts": {
+      "title": "型号搜索",
+      "model": "型号",
+      "modelPlaceholder": "请输入型号",
+      "brand": "品牌",
+      "brandPlaceholder": "品牌（选填）",
+      "pkg": "封装",
+      "pkgPlaceholder": "封装（选填）",
+      "submit": "搜索",
+      "hotTitle": "最新热卖型号",
+      "rank": "排名",
+      "productModel": "商品型号"
+    }
+  },
+  "search": {
+    "placeholder": "请输入型号",
+    "filterModel": "型号",
+    "filterModelPlaceholder": "输入型号",
+    "filterBrand": "品牌",
+    "filterBrandPlaceholder": "输入品牌",
+    "filterPkg": "封装",
+    "filterPkgPlaceholder": "输入封装",
+    "submit": "搜索",
+    "reset": "重置",
+    "resultLabel": "搜索结果",
+    "totalRecords": "共 {count} 条记录",
+    "index": "序号",
+    "productModel": "商品型号",
+    "emptyText": "未找到匹配的型号"
+  },
+  "about": {
+    "bannerTitle": "关于隆祺",
+    "bannerSubtitle": "About Longkitech",
+    "sectionTitle": "香港隆祺科技有限公司",
+    "intro1": "香港隆祺科技有限公司，自公司2017年成立以来，是一家世界知名的电子元器件分销商之一。公司代理分销产品线有：ST、TI、ON、MICROCHIP、ADI 、NXP 等知名品牌IC产品，有专业的销售团队，以丰富的经验和技术支持为您提供最优质的服务。",
+    "intro2": "隆祺科技始终秉承「诚信为本，不忘初心，互利共赢」的经营理念，公司定位清晰，经过多年的不断努力，公司长期备有大量的原装现货产品。长期可帮助客户大、小批量海外订购。产品广泛应用于：医疗器械，汽车制造，会议系统，井底石油设备，通讯，工控，等领域。",
+    "culture": "企业文化",
+    "cultureCommitment": "公司承诺",
+    "cultureCommitmentDesc": "只做原装！诚实守信，互惠互利",
+    "cultureGoal": "发展目标",
+    "cultureGoalDesc": "成为全球芯片行业顶级分销商",
+    "cultureService": "服务理念",
+    "cultureServiceDesc": "最优服务，成就客户",
+    "cultureValue": "核心价值观",
+    "cultureValueDesc": "真诚团结 责任高效 学习创新 感恩共赢",
+    "contactTitle": "联系我们",
+    "contactPerson": "联系人：",
+    "contactPersonValue": "蔡小姐",
+    "contactPhone": "电话：",
+    "contactEmail": "邮箱：",
+    "contactAddress": "公司地址：",
+    "contactAddressValue": "广东省深圳市福田区东方时代A座1308"
+  },
+  "footer": {
+    "copyright": "Copyright ©2026 longkitech.com 版权所有",
+    "icp": "粤ICP备xxx号",
+    "complaint": "投诉建议",
+    "phone": "联系电话：18823333285",
+    "report": "文明办网文明上网举报电话：010-82615762",
+    "reportCenter": "违法不良信息举报中心",
+    "psb": "粤公网安备 xxx号"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  }
+}

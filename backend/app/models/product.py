@@ -17,6 +17,7 @@ class Product(Base):
     name = Column(String(200), nullable=False)
     model = Column(String(200), index=True, nullable=False)
     brand = Column(String(100), index=True, nullable=False)
+    pkg = Column(String(200), nullable=True, index=True)
     price = Column(Float, default=0)
     stock = Column(Integer, default=0)
     category = Column(String(100), nullable=True)

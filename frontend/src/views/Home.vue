@@ -2,10 +2,11 @@
   <div class="home">
     <TopBar />
     <Header />
-    <NavBar />
     <BrandShowcase />
-    <FindParts />
-    <Footer />
+    <div id="ic-stock">
+      <FindParts />
+      <Footer />
+    </div>
     <RightSidebar />
   </div>
 </template>
@@ -13,7 +14,6 @@
 <script setup>
 import TopBar from '@/components/TopBar.vue'
 import Header from '@/components/Header.vue'
-import NavBar from '@/components/NavBar.vue'
 import BrandShowcase from '@/components/BrandShowcase.vue'
 import FindParts from '@/components/FindParts.vue'
 import Footer from '@/components/Footer.vue'

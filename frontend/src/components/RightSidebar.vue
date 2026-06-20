@@ -1,9 +1,13 @@
 <template>
   <div class="right-sidebar" :class="{ visible: showSidebar }">
-    <div class="sidebar-item" v-for="(item, i) in menuItems" :key="i" @click="item.action">
+    <div class="sidebar-item" @mouseenter="showWechat = true" @mouseleave="showWechat = false">
       <div class="sidebar-icon">
-        <el-icon :size="20" color="#666">{{ item.icon }}</el-icon>
-        <span class="sidebar-tooltip">{{ item.label }}</span>
+        <el-icon :size="20" color="#666"><ChatLineSquare /></el-icon>
+        <span class="sidebar-tooltip">微信</span>
+      </div>
+      <div class="wechat-popup" v-show="showWechat">
+        <img src="/wechat.jpg" alt="微信二维码" />
+        <span class="wechat-label">扫一扫添加微信</span>
       </div>
     </div>
     <div class="sidebar-item back-top" v-show="showBackTop" @click="scrollToTop">
@@ -20,14 +24,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const showSidebar = ref(false)
 const showBackTop = ref(false)
-
-const menuItems = [
-  { icon: 'ChatDotRound', label: '在线客服', action: () => window.open('https://wpa1.qq.com/ExeLLyG7?_type=wpa&qidian=true') },
-  { icon: 'ChatLineSquare', label: '微信', action: () => alert('微信号: longkitech') },
-  { icon: 'ShoppingCart', label: '购物车', action: () => alert('购物车功能') },
-  { icon: 'Message', label: '公众号', action: () => alert('关注公众号') },
-  { icon: 'EditPen', label: '投诉建议', action: () => alert('投诉建议功能') },
-]
+const showWechat = ref(false)
 
 function handleScroll() {
   showBackTop.value = window.scrollY > 300
@@ -108,5 +105,32 @@ onBeforeUnmount(() => {
 
 .back-top {
   border-top: 1px solid var(--color-gray-7);
+}
+
+.wechat-popup {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-7);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.wechat-popup img {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+.wechat-label {
+  font-size: 12px;
+  color: var(--color-gray-2);
+  white-space: nowrap;
 }
 </style>
