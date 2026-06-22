@@ -25,7 +25,13 @@
       <div class="hot-products-panel">
         <div class="hot-title">{{ $t('home.findParts.hotTitle') }}</div>
         <div class="table-wrapper">
-          <table class="table">
+          <table class="table" style="table-layout: fixed">
+            <colgroup>
+              <col style="width: 50px" />
+              <col style="width: 150px" />
+              <col style="width: 150px" />
+              <col style="width: 100px" />
+            </colgroup>
             <thead>
               <tr>
                 <th>{{ $t('home.findParts.rank') }}</th>

@@ -1,7 +1,7 @@
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy import select
+from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
@@ -20,7 +20,6 @@ async def get_hot_products(
 ):
     stmt = (
         select(Product)
-        .where(Product.is_hot == True)
         .order_by(Product.id.asc())
         .offset((page - 1) * page_size)
         .limit(page_size)
@@ -28,9 +27,7 @@ async def get_hot_products(
     result = await db.execute(stmt)
     items = result.scalars().all()
 
-    count_stmt = select(Product).where(Product.is_hot == True)
-    count_result = await db.execute(count_stmt)
-    total = len(count_result.scalars().all())
+    total = await db.scalar(select(func.count(Product.id))) or 0
 
     return ProductList(
         items=[ProductResponse.model_validate(p) for p in items],
@@ -63,12 +60,24 @@ async def search_products(
         stmt = stmt.where(Product.pkg.ilike(f"%{pkg}%"))
 
     stmt = stmt.order_by(Product.id.asc())
-    count_stmt = stmt
+    # Build count query from the same filters
+    count_stmt = select(func.count(Product.id))
+    if keyword:
+        count_stmt = count_stmt.where(
+            Product.name.ilike(f"%{keyword}%")
+            | Product.model.ilike(f"%{keyword}%")
+            | Product.brand.ilike(f"%{keyword}%")
+            | Product.description.ilike(f"%{keyword}%")
+        )
+    if brand:
+        count_stmt = count_stmt.where(Product.brand.ilike(f"%{brand}%"))
+    if pkg:
+        count_stmt = count_stmt.where(Product.pkg.ilike(f"%{pkg}%"))
+
     result = await db.execute(stmt.offset((page - 1) * page_size).limit(page_size))
     items = result.scalars().all()
 
-    count_result = await db.execute(count_stmt)
-    total = len(count_result.scalars().all())
+    total = await db.scalar(count_stmt) or 0
 
     return ProductList(
         items=[ProductResponse.model_validate(p) for p in items],

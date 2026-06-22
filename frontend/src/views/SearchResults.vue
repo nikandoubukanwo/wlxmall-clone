@@ -20,9 +20,9 @@
               class="search-input"
               type="text"
               :placeholder="$t('search.placeholder')"
-              @keyup.enter="doSearch"
+              @keyup.enter="doTopSearch"
             />
-            <button class="search-btn" @click="doSearch">
+            <button class="search-btn" @click="doTopSearch">
               <el-icon><Search /></el-icon>
               {{ $t('search.submit') }}
             </button>
@@ -37,17 +37,17 @@
         <div class="filter-row">
           <div class="filter-item">
             <label class="filter-label">{{ $t('search.filterModel') }}</label>
-            <input v-model="filterKeyword" class="filter-input" :placeholder="$t('search.filterModelPlaceholder')" @keyup.enter="doSearch" />
+            <input v-model="filterKeyword" class="filter-input" :placeholder="$t('search.filterModelPlaceholder')" @keyup.enter="doFilterSearch" />
           </div>
           <div class="filter-item">
             <label class="filter-label">{{ $t('search.filterBrand') }}</label>
-            <input v-model="filterBrand" class="filter-input" :placeholder="$t('search.filterBrandPlaceholder')" @keyup.enter="doSearch" />
+            <input v-model="filterBrand" class="filter-input" :placeholder="$t('search.filterBrandPlaceholder')" @keyup.enter="doFilterSearch" />
           </div>
           <div class="filter-item">
             <label class="filter-label">{{ $t('search.filterPkg') }}</label>
-            <input v-model="filterPkg" class="filter-input" :placeholder="$t('search.filterPkgPlaceholder')" @keyup.enter="doSearch" />
+            <input v-model="filterPkg" class="filter-input" :placeholder="$t('search.filterPkgPlaceholder')" @keyup.enter="doFilterSearch" />
           </div>
-          <button class="filter-btn" @click="doSearch">
+          <button class="filter-btn" @click="doFilterSearch">
             <el-icon><Search /></el-icon>
             {{ $t('search.submit') }}
           </button>
@@ -159,10 +159,15 @@ async function fetchData(page = 1) {
   }
 }
 
-function doSearch() {
+function doTopSearch() {
   const query = {}
-  const kw = searchKeyword.value || filterKeyword.value
-  if (kw) query.keyword = kw.trim()
+  if (searchKeyword.value) query.keyword = searchKeyword.value.trim()
+  router.push({ path: '/search', query })
+}
+
+function doFilterSearch() {
+  const query = {}
+  if (filterKeyword.value) query.keyword = filterKeyword.value.trim()
   if (filterBrand.value) query.brand = filterBrand.value.trim()
   if (filterPkg.value) query.pkg = filterPkg.value.trim()
   router.push({ path: '/search', query })
