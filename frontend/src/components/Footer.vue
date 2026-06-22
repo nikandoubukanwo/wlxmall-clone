@@ -3,7 +3,7 @@
     <!-- Bottom: Copyright -->
     <div class="footer-bottom">
       <div class="footer-inner">
-        <p>Copyright ©2026 longkitech.com {{ $t('footer.copyright') }} | {{ $t('footer.icp') }}</p>
+        <p>{{ $t('footer.copyright') }} | {{ $t('footer.icp') }}</p>
         <p>{{ $t('footer.phone') }}</p>
         <p>{{ $t('footer.psb') }}</p>
       </div>
