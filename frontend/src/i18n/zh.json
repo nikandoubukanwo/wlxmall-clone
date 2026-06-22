@@ -6,12 +6,12 @@
     "contact": "联系我们"
   },
   "topbar": {
-    "phone": "18823333285",
+    "phone": "+8618823333285",
     "qq": "18823333285"
   },
   "header": {
-    "company": "隆祺科技",
-    "brand": "Longkitech",
+    "company": "香港隆祺科技有限公司",
+    "brand": "HK LONGKI TECHNOLOGY LIMITED",
     "subtitle": "电子元器件采购网"
   },
   "home": {
@@ -48,11 +48,11 @@
     "emptyText": "未找到匹配的型号"
   },
   "about": {
-    "bannerTitle": "关于隆祺",
-    "bannerSubtitle": "About Longkitech",
+    "bannerTitle": "关于香港隆祺",
+    "bannerSubtitle": "About HK LONGKI TECHNOLOGY LIMITED",
     "sectionTitle": "香港隆祺科技有限公司",
     "intro1": "香港隆祺科技有限公司，自公司2017年成立以来，是一家世界知名的电子元器件分销商之一。公司代理分销产品线有：ST、TI、ON、MICROCHIP、ADI 、NXP 等知名品牌IC产品，有专业的销售团队，以丰富的经验和技术支持为您提供最优质的服务。",
-    "intro2": "隆祺科技始终秉承「诚信为本，不忘初心，互利共赢」的经营理念，公司定位清晰，经过多年的不断努力，公司长期备有大量的原装现货产品。长期可帮助客户大、小批量海外订购。产品广泛应用于：医疗器械，汽车制造，会议系统，井底石油设备，通讯，工控，等领域。",
+    "intro2": "香港隆祺科技有限公司始终秉承「诚信为本，不忘初心，互利共赢」的经营理念，公司定位清晰，经过多年的不断努力，公司长期备有大量的原装现货产品。长期可帮助客户大、小批量海外订购。产品广泛应用于：医疗器械，汽车制造，会议系统，井底石油设备，通讯，工控，等领域。",
     "culture": "企业文化",
     "cultureCommitment": "公司承诺",
     "cultureCommitmentDesc": "只做原装！诚实守信，互惠互利",
@@ -74,7 +74,7 @@
     "copyright": "Copyright ©2026 longkitech.com 版权所有",
     "icp": "粤ICP备xxx号",
     "complaint": "投诉建议",
-    "phone": "联系电话：18823333285",
+    "phone": "联系电话：+8618823333285",
     "report": "文明办网文明上网举报电话：010-82615762",
     "reportCenter": "违法不良信息举报中心",
     "psb": "粤公网安备 xxx号"

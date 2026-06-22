@@ -6,12 +6,12 @@
     "contact": "Contact Us"
   },
   "topbar": {
-    "phone": "18823333285",
+    "phone": "+8618823333285",
     "qq": "0755-83233897"
   },
   "header": {
-    "company": "Longkitech",
-    "brand": "隆祺科技",
+    "company": "HK LONGKI TECHNOLOGY LIMITED",
+    "brand": "香港隆祺科技有限公司",
     "subtitle": "Electronic Components Sourcing"
   },
   "home": {
@@ -48,11 +48,11 @@
     "emptyText": "No matching models found"
   },
   "about": {
-    "bannerTitle": "About Longkitech",
-    "bannerSubtitle": "隆祺科技有限公司",
-    "sectionTitle": "Longkitech Technology Co., Ltd.",
-    "intro1": "Founded in 2017, Longkitech Technology Co., Ltd. is one of the world's leading electronic components distributors. We distribute product lines from ST, TI, ON, MICROCHIP, ADI, NXP and other renowned brands, with a professional sales team providing the highest quality service backed by rich experience and technical support.",
-    "intro2": "Longkitech adheres to the business philosophy of 'Integrity first, never forget our初心, mutual benefit and win-win'. With a clear positioning and years of continuous effort, we maintain substantial stock of genuine products and can assist customers with both small and large batch overseas ordering. Our products are widely used in medical devices, automotive manufacturing, conference systems, downhole petroleum equipment, telecommunications, industrial control, and other fields.",
+    "bannerTitle": "About HK LONGKI TECHNOLOGY LIMITED",
+    "bannerSubtitle": "香港隆祺科技有限公司",
+    "sectionTitle": "HK LONGKI TECHNOLOGY LIMITED",
+    "intro1": "Founded in 2017, HK LONGKI TECHNOLOGY LIMITED is one of the world's leading electronic components distributors. We distribute product lines from ST, TI, ON, MICROCHIP, ADI, NXP and other renowned brands, with a professional sales team providing the highest quality service backed by rich experience and technical support.",
+    "intro2": "HK LONGKI TECHNOLOGY LIMITED adheres to the business philosophy of 'Integrity first, never forget our初心, mutual benefit and win-win'. With a clear positioning and years of continuous effort, we maintain substantial stock of genuine products and can assist customers with both small and large batch overseas ordering. Our products are widely used in medical devices, automotive manufacturing, conference systems, downhole petroleum equipment, telecommunications, industrial control, and other fields.",
     "culture": "Corporate Culture",
     "cultureCommitment": "Our Commitment",
     "cultureCommitmentDesc": "100% genuine! Honesty, integrity and mutual benefit",
@@ -74,7 +74,7 @@
     "copyright": "Copyright ©2026 longkitech.com All rights reserved",
     "icp": "ICP License No. xxx",
     "complaint": "Complaints & Suggestions",
-    "phone": "Contact: 18823333285",
+    "phone": "Contact: +8618823333285",
     "report": "Civilized Internet Reporting: 010-82615762",
     "reportCenter": "Illegal Information Reporting Center",
     "psb": "Public Security Filing No. xxx"

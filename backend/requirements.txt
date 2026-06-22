@@ -1,4 +1,4 @@
-# 后端依赖 - 无版本锁定（兼容各Python版本）
+# Backend dependencies - no version locking
 fastapi
 uvicorn[standard]
 sqlalchemy

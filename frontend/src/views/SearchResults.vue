@@ -7,10 +7,10 @@
     <div class="search-header-bar">
       <div class="header-inner">
         <router-link to="/" class="search-logo">
-          <img class="logo-img" src="/logo.png" alt="隆祺科技" />
+          <img class="logo-img" src="/logo.png" alt="香港隆祺科技有限公司" />
           <div>
-            <div class="logo">隆祺科技</div>
-            <div class="logo-tag">Longkitech</div>
+            <div class="logo">香港隆祺科技有限公司</div>
+            <div class="logo-tag">HK LONGKI TECHNOLOGY LIMITED</div>
           </div>
         </router-link>
         <div class="search-box-area">
@@ -233,14 +233,14 @@ onMounted(syncFromRoute)
   width: auto;
 }
 .logo {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1.0;
 }
 .logo-tag {
   font-weight: 500;
-  font-size: 24px; color: var(--color-primary);
+  font-size: 20px; color: var(--color-primary);
 
   margin-top: 2px;
 }
